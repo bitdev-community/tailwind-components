@@ -1,0 +1,72 @@
+---
+description: 'A React development environment.'
+labels: ['env', 'react', 'dev', 'vite', 'jest', 'webpack']
+---
+
+:::note
+This node environments uses ESM by default, for CJS React environment, head to the [teambit.react/tw-react-env](https://bit.cloud/teambit/react/tw-react-env) environment
+:::
+
+A reusable development environment for React.  
+Use the React environment to create new React components and apps.
+
+Features:
+- ▶️ TypeScript
+- 🧪 Vitest
+- 🧑‍💻 Generator templates include React UI component, React hook and apps (including Vite + SSR).
+- 🚀 React Workspace starter
+- 🦋 ESLint
+- ⚒️ A React optimized build pipeline.
+- 👓 React Preview
+
+## Use in existing workspaces
+
+Add the development env to your generator configuration on `workspace.jsonc`.  
+
+```json
+{
+  "teambit.generator/generator": {
+    "envs": [
+      "learnbit-react.tailwind-library/envs/tw-react-env"
+    ]
+  }
+}
+```
+
+You can see the generator templates in your workspace using `bit templates`.
+
+## Use on an existing component
+
+Use this dev environment on your existing components, by running the following command: 
+
+```
+bit env set my-component learnbit-react.tailwind-library/envs/tw-react-env
+```
+
+
+## Create a React workspace
+
+You can create a new React workspace made from this env using the following command:
+
+```
+bit new react my-workspace --aspect learnbit-react.tailwind-library/envs/tw-react-env
+```
+
+## Compose your own env
+
+You can base on this env, and customize it to your needs. To create your env run this command:
+```
+bit create tw-react-env my-new-env
+```
+
+Make sure your new environment class extends this env class and overrides the needed class methods.
+
+## ESM
+
+This React dev environment uses ESM by default. Make sure to have a `package.json` file on your workspace root to workspace specific avoid type issues.
+
+```json
+{
+  "type": "module"
+}
+```

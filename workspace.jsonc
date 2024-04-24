@@ -1,0 +1,85 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documentation, please see: https://bit.dev/reference/workspace/workspace-json
+ **/{
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  /**
+   * main configuration of the Bit workspace.
+   **/
+  "teambit.workspace/workspace": {
+    /**
+     * the name of the component workspace. used for development purposes.
+     **/
+    "name": "my-workspace-name",
+    /**
+     * set the icon to be shown on the Bit server.
+     **/
+    "icon": "https://static.bit.dev/brands/bit-logo-min.png",
+    /**
+     * default directory to place a component during `bit import` and `bit create`.
+     * the following placeholders are available:
+     * name - component name includes namespace, e.g. 'ui/button'.
+     * scopeId - full scope-id includes the owner, e.g. 'teambit.compilation'.
+     * scope - scope name only, e.g. 'compilation'.
+     * owner - owner name in bit.dev, e.g. 'teambit'.
+     **/
+    "defaultDirectory": "{scope}/{name}",
+    /**
+     * default scope for all components in workspace.
+     **/
+    "defaultScope": "learnbit-react.tailwind-library",
+    "resolveAspectsFromNodeModules": true,
+    "resolveEnvsFromRoots": true
+  },
+  /**
+  * Enable generator templates by uncommenting the desired environments below.
+  * These generators scaffold components for Node, React, Vue, and Angular.
+  * After uncommenting, run `bit install` to make them available in your workspace.
+  * Explore more dev environments at: https://bit.dev/docs/getting-started/composing/dev-environments
+  **/
+  "teambit.generator/generator": {
+    "envs": [
+      //  "bitdev.node/node-env",
+      //  "bitdev.react/react-env",
+      //  "bitdev.vue/vue-env",
+      //  "bitdev.angular/angular-env"
+    ]
+  },
+  /**
+   * main configuration for component dependency resolution.
+   **/
+  "teambit.dependencies/dependency-resolver": {
+    /**
+     * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
+     */
+    "packageManager": "teambit.dependencies/pnpm",
+    "policy": {
+      "dependencies": {
+        "@bitdev/general.envs.bit-env": "^1.0.1",
+        "@bitdev/node.node-env": "^1.0.26",
+        "@bitdev/react.app-types.vite-react": "^2.0.0",
+        "@bitdev/react.react-env": "^2.0.2",
+        "@frontend/tailwind.config.tailwind": "^1.0.0",
+        "@frontend/tailwind.envs.tw-react-env": "^0.0.1",
+        "@frontend/tailwind.examples.button": "^1.0.1",
+        "@frontend/tailwind.plugin": "^1.0.1",
+        "@frontend/tailwind.transformers.tailwind": "^1.0.0",
+        "@mdx-js/rollup": "^3.0.0",
+        "@teambit/docs.docs-template": "^1.0.4",
+        "@teambit/preview.react-preview": "^1.0.25",
+        "@teambit/react.mounter": "^1.0.3",
+        "@teambit/toolbox.performance.v8-cache": "^0.0.33",
+        "@vitejs/plugin-react": "^4.0.4",
+        "glob": "^10.2.6",
+        "vite": "^5.1.5"
+      },
+      "peerDependencies": {}
+    },
+    "linkCoreAspects": true,
+    "rootComponents": true
+  },
+  "teambit.workspace/workspace-config-files": {
+    "enableWorkspaceConfigWrite": true
+  },
+  "learnbit-react.tailwind-library/demo": {}
+}
