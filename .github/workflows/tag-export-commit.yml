@@ -1,4 +1,4 @@
-name: Tag and Export and Commit Bitmap
+name: Tag Export Commit
 on:
   pull_request:
     branches: 
