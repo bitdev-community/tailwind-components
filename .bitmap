@@ -11,185 +11,45 @@
 {
     "config/tailwind": {
         "name": "config/tailwind",
-        "scope": "",
-        "version": "",
-        "defaultScope": "learnbit-react.tailwind-library",
+        "scope": "learnbit-react.tailwind-library",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "tailwind-library/config/tailwind",
-        "config": {
-            "teambit.dependencies/dependency-resolver": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.preview/preview": {},
-            "teambit.component/dev-files": {},
-            "teambit.pipelines/builder": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "frontend.tailwind",
-                    "name": "config/tailwind",
-                    "version": "1.0.0"
-                }
-            },
-            "bitdev.node/node-env@1.0.26": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.node/node-env"
-            },
-            "teambit.semantics/schema": {}
-        }
+        "rootDir": "tailwind-library/config/tailwind"
     },
     "demo": {
         "name": "demo",
-        "scope": "",
-        "version": "",
-        "defaultScope": "learnbit-react.tailwind-library",
+        "scope": "learnbit-react.tailwind-library",
+        "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "tailwind-library/demo",
-        "config": {
-            "teambit.dependencies/dependency-resolver": {
-                "policy": {
-                    "dependencies": {
-                        "tailwindcss": "3.4.3"
-                    }
-                }
-            },
-            "teambit.harmony/application": {},
-            "teambit.component/dev-files": {},
-            "teambit.preview/preview": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.pipelines/builder": {},
-            "teambit.semantics/schema": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "frontend.tailwind",
-                    "name": "examples/vite-app",
-                    "version": "1.0.2"
-                }
-            },
-            "learnbit-react.tailwind-library/envs/tw-react-env": {},
-            "teambit.envs/envs": {
-                "env": "learnbit-react.tailwind-library/envs/tw-react-env"
-            }
-        }
+        "rootDir": "tailwind-library/demo"
     },
     "envs/tw-react-env": {
         "name": "envs/tw-react-env",
-        "scope": "",
-        "version": "",
-        "defaultScope": "learnbit-react.tailwind-library",
+        "scope": "learnbit-react.tailwind-library",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "tailwind-library/envs/tw-react-env",
-        "config": {
-            "bitdev.general/envs/bit-env@1.0.1": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.general/envs/bit-env"
-            },
-            "teambit.dependencies/dependency-resolver": {
-                "policy": {
-                    "dependencies": {
-                        "@apollo/client": "^3.8.10"
-                    }
-                }
-            },
-            "teambit.component/dev-files": {},
-            "teambit.preview/preview": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.pipelines/builder": {},
-            "teambit.semantics/schema": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "frontend.tailwind",
-                    "name": "envs/tw-react-env",
-                    "version": "0.0.1"
-                }
-            },
-            "teambit.harmony/application": {}
-        }
+        "rootDir": "tailwind-library/envs/tw-react-env"
     },
     "ui/button": {
         "name": "ui/button",
-        "scope": "",
-        "version": "",
-        "defaultScope": "learnbit-react.tailwind-library",
+        "scope": "learnbit-react.tailwind-library",
+        "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "tailwind-library/ui/button",
-        "config": {
-            "teambit.dependencies/dependency-resolver": {},
-            "teambit.component/dev-files": {},
-            "teambit.semantics/schema": {},
-            "teambit.preview/preview": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.pipelines/builder": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "frontend.tailwind",
-                    "name": "examples/button",
-                    "version": "1.0.1"
-                }
-            },
-            "learnbit-react.tailwind-library/envs/tw-react-env": {},
-            "teambit.envs/envs": {
-                "env": "learnbit-react.tailwind-library/envs/tw-react-env"
-            }
-        }
+        "rootDir": "tailwind-library/ui/button"
     },
     "ui/switch": {
         "name": "ui/switch",
-        "scope": "",
-        "version": "",
-        "defaultScope": "learnbit-react.tailwind-library",
+        "scope": "learnbit-react.tailwind-library",
+        "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "tailwind-library/ui/switch",
-        "config": {
-            "frontend.tailwind/envs/tw-react-env@0.0.1": {},
-            "teambit.envs/envs": {
-                "env": "frontend.tailwind/envs/tw-react-env"
-            },
-            "teambit.dependencies/dependency-resolver": {},
-            "teambit.component/dev-files": {},
-            "teambit.semantics/schema": {},
-            "teambit.preview/preview": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.pipelines/builder": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "frontend.tailwind",
-                    "name": "examples/button",
-                    "version": "1.0.1"
-                }
-            }
-        }
+        "rootDir": "tailwind-library/ui/switch"
     },
     "ui/textfield": {
         "name": "ui/textfield",
-        "scope": "",
-        "version": "",
-        "defaultScope": "learnbit-react.tailwind-library",
+        "scope": "learnbit-react.tailwind-library",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "tailwind-library/ui/textfield",
-        "config": {
-            "frontend.tailwind/envs/tw-react-env@0.0.1": {},
-            "teambit.envs/envs": {
-                "env": "frontend.tailwind/envs/tw-react-env"
-            },
-            "teambit.dependencies/dependency-resolver": {},
-            "teambit.component/dev-files": {},
-            "teambit.semantics/schema": {},
-            "teambit.preview/preview": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.pipelines/builder": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "frontend.tailwind",
-                    "name": "examples/button",
-                    "version": "1.0.1"
-                }
-            }
-        }
+        "rootDir": "tailwind-library/ui/textfield"
     },
     "$schema-version": "17.0.0"
 }

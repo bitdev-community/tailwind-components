@@ -1,7 +1,7 @@
 import { Plugin, type Config } from '@frontend/tailwind.plugin';
 
 const bitPlugin = new Plugin({
-  components: ['@frontend/tailwind.examples.button'],
+  components: ['@learnbit-react/tailwind-library.ui.**'],
   content: ['./**/*.{js,jsx,ts,tsx}'],
   cwd: __dirname,
 });
