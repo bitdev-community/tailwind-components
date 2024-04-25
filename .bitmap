@@ -19,7 +19,7 @@
     "demo": {
         "name": "demo",
         "scope": "learnbit-react.tailwind-library",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "tailwind-library/demo"
     },
@@ -33,7 +33,7 @@
     "ui/button": {
         "name": "ui/button",
         "scope": "learnbit-react.tailwind-library",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "tailwind-library/ui/button"
     },
