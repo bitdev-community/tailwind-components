@@ -8,6 +8,6 @@ it('should render with the correct text', () => {
       <DemoDemo />
     </MemoryRouter>
   ));
-  const rendered = getByText('Hello Bit and Vite!');
+  const rendered = getByText('Hello Bit with Tailwind!');
   expect(rendered).toBeTruthy();
 });

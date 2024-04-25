@@ -29,7 +29,7 @@ export function DemoDemo() {
         <Route path="/" element={
           <div className='flex flex-col gap-2 items-center justify-center h-screen bg-gray-100'>
             <h1 className='text-4xl text-center text-gray-800'>
-              Hello Bit with Tailwind
+              Hello Bit with Tailwind!
             </h1>
 
             <h2>Button Element</h2>
