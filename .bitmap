@@ -42,14 +42,26 @@
         "scope": "learnbit-react.tailwind-library",
         "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "tailwind-library/ui/switch"
+        "rootDir": "tailwind-library/ui/switch",
+        "config": {
+            "learnbit-react.tailwind-library/envs/tw-react-env": {},
+            "teambit.envs/envs": {
+                "env": "learnbit-react.tailwind-library/envs/tw-react-env"
+            }
+        }
     },
     "ui/textfield": {
         "name": "ui/textfield",
         "scope": "learnbit-react.tailwind-library",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "tailwind-library/ui/textfield"
+        "rootDir": "tailwind-library/ui/textfield",
+        "config": {
+            "learnbit-react.tailwind-library/envs/tw-react-env": {},
+            "teambit.envs/envs": {
+                "env": "learnbit-react.tailwind-library/envs/tw-react-env"
+            }
+        }
     },
     "$schema-version": "17.0.0"
 }
