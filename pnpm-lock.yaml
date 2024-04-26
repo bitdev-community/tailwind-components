@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@apollo/client':
-        specifier: ^3.10.1
+        specifier: '>=3.8.10 <4.0.0'
         version: 3.10.1(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.3.0)(react@18.3.0)
       '@bitdev/general.envs.bit-env':
         specifier: ^1.0.1
@@ -36,7 +36,7 @@ importers:
         specifier: 1.6.22
         version: 1.6.22(react@18.3.0)
       '@mdx-js/rollup':
-        specifier: ^3.0.1
+        specifier: ^3.0.0
         version: 3.0.1
       '@teambit/docs.docs-template':
         specifier: ^1.0.4
@@ -57,22 +57,22 @@ importers:
         specifier: 6.4.2
         version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
-        specifier: ^14.3.1
+        specifier: ^14.2.1
         version: 14.3.1(react-dom@18.3.0)(react@18.3.0)
       '@types/jest':
-        specifier: ^29.5.12
+        specifier: ^29.2.2
         version: 29.5.12
       '@types/node':
-        specifier: ^20.12.7
+        specifier: '>=20.11.23 <21.0.0'
         version: 20.12.7
       '@types/react':
         specifier: 18.2.23
         version: 18.2.23
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: ^18.2.5
         version: 18.3.0
       '@types/testing-library__jest-dom':
-        specifier: ^5.14.9
+        specifier: ^5.9.5
         version: 5.14.9
       '@typescript-eslint/eslint-plugin':
         specifier: 6.19.1
@@ -81,7 +81,7 @@ importers:
         specifier: 6.19.1
         version: 6.19.1(eslint@8.56.0)(typescript@5.4.5)
       '@vitejs/plugin-react':
-        specifier: ^4.2.1
+        specifier: ^4.0.4
         version: 4.2.1(vite@5.2.10)
       browserslist:
         specifier: 4.23.0
@@ -108,7 +108,7 @@ importers:
         specifier: 4.6.0
         version: 4.6.0(eslint@8.56.0)
       glob:
-        specifier: ^10.3.12
+        specifier: ^10.2.6
         version: 10.3.12
       graphql:
         specifier: ^16.8.1
@@ -120,34 +120,34 @@ importers:
         specifier: 29.3.1
         version: 29.3.1(@types/node@20.12.7)
       jsdom:
-        specifier: ^23.2.0
+        specifier: ^23.0.1
         version: 23.2.0
       pino-pretty:
         specifier: 4.5.0
         version: 4.5.0
       react:
-        specifier: ^18.3.0
+        specifier: '>=18.0.0 <19.0.0'
         version: 18.3.0
       react-dom:
-        specifier: ^18.3.0
+        specifier: '>=18.0.0 <19.0.0'
         version: 18.3.0(react@18.3.0)
       react-router-dom:
-        specifier: ^6.23.0
+        specifier: ^6.16.0
         version: 6.23.0(react-dom@18.3.0)(react@18.3.0)
       sass:
-        specifier: ^1.75.0
+        specifier: ^1.69.5
         version: 1.75.0
       tailwindcss:
         specifier: 3.4.3
         version: 3.4.3
       vite:
-        specifier: ^5.2.10
+        specifier: ^5.1.5
         version: 5.2.10(@types/node@20.12.7)(sass@1.75.0)
       vitest:
         specifier: 1.2.1
         version: 1.2.1(@types/node@20.12.7)(jsdom@23.2.0)(sass@1.75.0)
       webpack:
-        specifier: ^5.91.0
+        specifier: ^5.88.2
         version: 5.91.0
     devDependencies:
       '@teambit/node.node':
@@ -214,10 +214,10 @@ importers:
         specifier: 4.6.0
         version: 4.6.0(eslint@8.56.0)
       react:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0
       react-dom:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0(react@18.3.0)
     dependenciesMeta:
       '@learnbit-react/tailwind-library.config.tailwind':
@@ -268,10 +268,10 @@ importers:
         specifier: 1.0.7
         version: 1.0.7(@types/react@18.2.23)(react@18.3.0)
       '@types/jest':
-        specifier: ^29.5.12
+        specifier: ^29.2.2
         version: 29.5.12
       '@types/node':
-        specifier: ^20.12.7
+        specifier: ^20.11.23
         version: 20.12.7
       '@typescript-eslint/eslint-plugin':
         specifier: 6.19.1
@@ -307,10 +307,10 @@ importers:
         specifier: ^2.12.6
         version: 2.12.6(graphql@16.8.1)
       react:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0
       react-dom:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0(react@18.3.0)
       vitest:
         specifier: 1.2.1
@@ -334,7 +334,7 @@ importers:
   node_modules/.bit_roots/learnbit-react.tailwind-library_demo:
     dependencies:
       '@apollo/client':
-        specifier: ^3.10.1
+        specifier: ^3.8.8
         version: 3.10.1(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.3.0)(react@18.3.0)
       '@bitdev/react.app-types.vite-react':
         specifier: ^2.0.0
@@ -370,7 +370,7 @@ importers:
         specifier: 1.6.22
         version: 1.6.22(react@18.3.0)
       '@mdx-js/rollup':
-        specifier: ^3.0.1
+        specifier: ^3.0.0
         version: 3.0.1
       '@teambit/mdx.ui.mdx-scope-context':
         specifier: 1.0.7
@@ -379,19 +379,19 @@ importers:
         specifier: 6.4.2
         version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
-        specifier: ^14.3.1
+        specifier: ^14.2.1
         version: 14.3.1(react-dom@18.3.0)(react@18.3.0)
       '@types/jest':
-        specifier: ^29.5.12
+        specifier: ^29.2.2
         version: 29.5.12
       '@types/react':
         specifier: 18.2.23
         version: 18.2.23
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: ^18.2.5
         version: 18.3.0
       '@types/testing-library__jest-dom':
-        specifier: ^5.14.9
+        specifier: ^5.9.5
         version: 5.14.9
       '@typescript-eslint/eslint-plugin':
         specifier: 6.19.1
@@ -400,7 +400,7 @@ importers:
         specifier: 6.19.1
         version: 6.19.1(eslint@8.56.0)(typescript@5.4.5)
       '@vitejs/plugin-react':
-        specifier: ^4.2.1
+        specifier: ^4.0.4
         version: 4.2.1(vite@5.2.10)
       browserslist:
         specifier: 4.23.0
@@ -430,34 +430,34 @@ importers:
         specifier: ^16.8.1
         version: 16.8.1
       jsdom:
-        specifier: ^23.2.0
+        specifier: ^23.0.1
         version: 23.2.0
       pino-pretty:
         specifier: 4.5.0
         version: 4.5.0
       react:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0
       react-dom:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0(react@18.3.0)
       react-router-dom:
-        specifier: ^6.23.0
+        specifier: ^6.16.0
         version: 6.23.0(react-dom@18.3.0)(react@18.3.0)
       sass:
-        specifier: ^1.75.0
+        specifier: ^1.69.5
         version: 1.75.0
       tailwindcss:
         specifier: 3.4.3
         version: 3.4.3
       vite:
-        specifier: ^5.2.10
+        specifier: ^5.1.5
         version: 5.2.10(@types/node@20.12.7)(sass@1.75.0)
       vitest:
         specifier: 1.2.1
         version: 1.2.1(@types/node@20.12.7)(jsdom@23.2.0)(sass@1.75.0)
       webpack:
-        specifier: ^5.91.0
+        specifier: ^5.88.2
         version: 5.91.0
     dependenciesMeta:
       '@learnbit-react/tailwind-library.config.tailwind':
@@ -478,7 +478,7 @@ importers:
   node_modules/.bit_roots/learnbit-react.tailwind-library_envs_tw-react-env:
     dependencies:
       '@apollo/client':
-        specifier: ^3.10.1
+        specifier: ^3.8.8
         version: 3.10.1(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.3.0)(react@18.3.0)
       '@learnbit-react/tailwind-library.config.tailwind':
         specifier: workspace:*
@@ -514,19 +514,19 @@ importers:
         specifier: 6.4.2
         version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
-        specifier: ^14.3.1
+        specifier: ^14.2.1
         version: 14.3.1(react-dom@18.3.0)(react@18.3.0)
       '@types/jest':
-        specifier: ^29.5.12
+        specifier: ^29.2.2
         version: 29.5.12
       '@types/react':
         specifier: 18.2.23
         version: 18.2.23
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: ^18.2.5
         version: 18.3.0
       '@types/testing-library__jest-dom':
-        specifier: ^5.14.9
+        specifier: ^5.9.5
         version: 5.14.9
       '@typescript-eslint/eslint-plugin':
         specifier: 6.19.1
@@ -562,28 +562,28 @@ importers:
         specifier: ^16.8.1
         version: 16.8.1
       jsdom:
-        specifier: ^23.2.0
+        specifier: ^23.0.1
         version: 23.2.0
       pino-pretty:
         specifier: 4.5.0
         version: 4.5.0
       react:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0
       react-dom:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0(react@18.3.0)
       react-router-dom:
-        specifier: ^6.23.0
+        specifier: ^6.16.0
         version: 6.23.0(react-dom@18.3.0)(react@18.3.0)
       sass:
-        specifier: ^1.75.0
+        specifier: ^1.69.5
         version: 1.75.0
       vitest:
         specifier: 1.2.1
         version: 1.2.1(@types/node@20.12.7)(jsdom@23.2.0)(sass@1.75.0)
       webpack:
-        specifier: ^5.91.0
+        specifier: ^5.88.2
         version: 5.91.0
     dependenciesMeta:
       '@learnbit-react/tailwind-library.config.tailwind':
@@ -637,16 +637,16 @@ importers:
         specifier: 18.2.23
         version: 18.2.23
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: ^18.2.5
         version: 18.3.0
       jest:
         specifier: 29.3.1
         version: 29.3.1(@types/node@20.12.7)
       react:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0
       react-dom:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0(react@18.3.0)
     dependenciesMeta:
       '@learnbit-react/tailwind-library.config.tailwind':
@@ -673,10 +673,10 @@ importers:
         specifier: 1.0.7
         version: 1.0.7(@types/react@18.2.23)(react@18.3.0)
       '@types/jest':
-        specifier: ^29.5.12
+        specifier: ^29.2.2
         version: 29.5.12
       '@types/node':
-        specifier: ^20.12.7
+        specifier: ^20.11.23
         version: 20.12.7
       '@typescript-eslint/eslint-plugin':
         specifier: 6.19.1
@@ -706,7 +706,7 @@ importers:
         specifier: 4.6.0
         version: 4.6.0(eslint@8.56.0)
       glob:
-        specifier: ^10.3.12
+        specifier: ^10.2.6
         version: 10.3.12
       graphql:
         specifier: ^16.8.1
@@ -715,10 +715,10 @@ importers:
         specifier: ^2.12.6
         version: 2.12.6(graphql@16.8.1)
       react:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0
       react-dom:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0(react@18.3.0)
       vitest:
         specifier: 1.2.1
@@ -731,7 +731,7 @@ importers:
   tailwind-library/demo:
     dependencies:
       '@apollo/client':
-        specifier: ^3.10.1
+        specifier: ^3.8.8
         version: 3.10.1(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.3.0)(react@18.3.0)
       '@bitdev/react.app-types.vite-react':
         specifier: ^2.0.0
@@ -746,7 +746,7 @@ importers:
         specifier: 1.6.22
         version: 1.6.22(react@18.3.0)
       '@mdx-js/rollup':
-        specifier: ^3.0.1
+        specifier: ^3.0.0
         version: 3.0.1
       '@teambit/mdx.ui.mdx-scope-context':
         specifier: 1.0.7
@@ -755,19 +755,19 @@ importers:
         specifier: 6.4.2
         version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
-        specifier: ^14.3.1
+        specifier: ^14.2.1
         version: 14.3.1(react-dom@18.3.0)(react@18.3.0)
       '@types/jest':
-        specifier: ^29.5.12
+        specifier: ^29.2.2
         version: 29.5.12
       '@types/react':
         specifier: 18.2.23
         version: 18.2.23
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: ^18.2.5
         version: 18.3.0
       '@types/testing-library__jest-dom':
-        specifier: ^5.14.9
+        specifier: ^5.9.5
         version: 5.14.9
       '@typescript-eslint/eslint-plugin':
         specifier: 6.19.1
@@ -776,7 +776,7 @@ importers:
         specifier: 6.19.1
         version: 6.19.1(eslint@8.56.0)(typescript@5.4.5)
       '@vitejs/plugin-react':
-        specifier: ^4.2.1
+        specifier: ^4.0.4
         version: 4.2.1(vite@5.2.10)
       browserslist:
         specifier: 4.23.0
@@ -806,40 +806,40 @@ importers:
         specifier: ^16.8.1
         version: 16.8.1
       jsdom:
-        specifier: ^23.2.0
+        specifier: ^23.0.1
         version: 23.2.0
       pino-pretty:
         specifier: 4.5.0
         version: 4.5.0
       react:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0
       react-dom:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0(react@18.3.0)
       react-router-dom:
-        specifier: ^6.23.0
+        specifier: ^6.16.0
         version: 6.23.0(react-dom@18.3.0)(react@18.3.0)
       sass:
-        specifier: ^1.75.0
+        specifier: ^1.69.5
         version: 1.75.0
       tailwindcss:
         specifier: 3.4.3
         version: 3.4.3
       vite:
-        specifier: ^5.2.10
+        specifier: ^5.1.5
         version: 5.2.10(@types/node@20.12.7)(sass@1.75.0)
       vitest:
         specifier: 1.2.1
         version: 1.2.1(@types/node@20.12.7)(jsdom@23.2.0)(sass@1.75.0)
       webpack:
-        specifier: ^5.91.0
+        specifier: ^5.88.2
         version: 5.91.0
 
   tailwind-library/envs/tw-react-env:
     dependencies:
       '@apollo/client':
-        specifier: ^3.10.1
+        specifier: ^3.8.10
         version: 3.10.1(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.3.0)(react@18.3.0)
       '@bitdev/react.react-env':
         specifier: ^2.0.2
@@ -872,19 +872,19 @@ importers:
         specifier: 6.4.2
         version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
-        specifier: ^14.3.1
+        specifier: ^14.2.1
         version: 14.3.1(react-dom@18.3.0)(react@18.3.0)
       '@types/jest':
-        specifier: ^29.5.12
+        specifier: ^29.2.2
         version: 29.5.12
       '@types/react':
         specifier: 18.2.23
         version: 18.2.23
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: ^18.2.5
         version: 18.3.0
       '@types/testing-library__jest-dom':
-        specifier: ^5.14.9
+        specifier: ^5.9.5
         version: 5.14.9
       '@typescript-eslint/eslint-plugin':
         specifier: 6.19.1
@@ -920,35 +920,35 @@ importers:
         specifier: ^16.8.1
         version: 16.8.1
       jsdom:
-        specifier: ^23.2.0
+        specifier: ^23.0.1
         version: 23.2.0
       pino-pretty:
         specifier: 4.5.0
         version: 4.5.0
       react:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0
       react-dom:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0(react@18.3.0)
       react-router-dom:
-        specifier: ^6.23.0
+        specifier: ^6.16.0
         version: 6.23.0(react-dom@18.3.0)(react@18.3.0)
       sass:
-        specifier: ^1.75.0
+        specifier: ^1.69.5
         version: 1.75.0
       vitest:
         specifier: 1.2.1
         version: 1.2.1(@types/node@20.12.7)(jsdom@23.2.0)(sass@1.75.0)
       webpack:
-        specifier: ^5.91.0
+        specifier: ^5.88.2
         version: 5.91.0
     devDependencies:
       '@bitdev/general.envs.bit-env':
         specifier: ^1.0.1
         version: 1.0.1(@testing-library/react@14.3.1)(@types/node@20.12.7)(@types/react@18.2.23)(graphql@16.8.1)(jest@29.3.1)(jsdom@23.2.0)(sass@1.75.0)
       '@types/node':
-        specifier: ^20.12.7
+        specifier: ^20.11.22
         version: 20.12.7
 
   tailwind-library/theme:
@@ -963,32 +963,32 @@ importers:
         specifier: 18.2.23
         version: 18.2.23
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: ^18.2.5
         version: 18.3.0
       jest:
         specifier: 29.3.1
         version: 29.3.1(@types/node@18.19.31)
       react:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0
       react-dom:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0(react@18.3.0)
     devDependencies:
       '@teambit/node.node':
         specifier: 1.0.54
         version: 1.0.54(@testing-library/react@14.3.1)(@types/node@18.19.31)(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(graphql@16.8.1)
       '@types/jest':
-        specifier: ^29.5.12
+        specifier: ^29.2.2
         version: 29.5.12
       '@types/node':
-        specifier: ^18.19.31
+        specifier: ^18.11.9
         version: 18.19.31
 
   tailwind-library/ui/button:
     dependencies:
       '@apollo/client':
-        specifier: ^3.10.1
+        specifier: ^3.8.8
         version: 3.10.1(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.3.0)(react@18.3.0)
       '@mdx-js/mdx':
         specifier: ^1.6.22
@@ -1003,19 +1003,19 @@ importers:
         specifier: 6.4.2
         version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
-        specifier: ^14.3.1
+        specifier: ^14.2.1
         version: 14.3.1(react-dom@18.3.0)(react@18.3.0)
       '@types/jest':
-        specifier: ^29.5.12
+        specifier: ^29.2.2
         version: 29.5.12
       '@types/react':
         specifier: 18.2.23
         version: 18.2.23
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: ^18.2.5
         version: 18.3.0
       '@types/testing-library__jest-dom':
-        specifier: ^5.14.9
+        specifier: ^5.9.5
         version: 5.14.9
       '@typescript-eslint/eslint-plugin':
         specifier: 6.19.1
@@ -1051,34 +1051,34 @@ importers:
         specifier: ^16.8.1
         version: 16.8.1
       jsdom:
-        specifier: ^23.2.0
+        specifier: ^23.0.1
         version: 23.2.0
       pino-pretty:
         specifier: 4.5.0
         version: 4.5.0
       react:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0
       react-dom:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0(react@18.3.0)
       react-router-dom:
-        specifier: ^6.23.0
+        specifier: ^6.16.0
         version: 6.23.0(react-dom@18.3.0)(react@18.3.0)
       sass:
-        specifier: ^1.75.0
+        specifier: ^1.69.5
         version: 1.75.0
       vitest:
         specifier: 1.2.1
         version: 1.2.1(@types/node@20.12.7)(jsdom@23.2.0)(sass@1.75.0)
       webpack:
-        specifier: ^5.91.0
+        specifier: ^5.88.2
         version: 5.91.0
 
   tailwind-library/ui/switch:
     dependencies:
       '@apollo/client':
-        specifier: ^3.10.1
+        specifier: ^3.8.8
         version: 3.10.1(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.3.0)(react@18.3.0)
       '@mdx-js/mdx':
         specifier: ^1.6.22
@@ -1093,19 +1093,19 @@ importers:
         specifier: 6.4.2
         version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
-        specifier: ^14.3.1
+        specifier: ^14.2.1
         version: 14.3.1(react-dom@18.3.0)(react@18.3.0)
       '@types/jest':
-        specifier: ^29.5.12
+        specifier: ^29.2.2
         version: 29.5.12
       '@types/react':
         specifier: 18.2.23
         version: 18.2.23
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: ^18.2.5
         version: 18.3.0
       '@types/testing-library__jest-dom':
-        specifier: ^5.14.9
+        specifier: ^5.9.5
         version: 5.14.9
       '@typescript-eslint/eslint-plugin':
         specifier: 6.19.1
@@ -1141,34 +1141,34 @@ importers:
         specifier: ^16.8.1
         version: 16.8.1
       jsdom:
-        specifier: ^23.2.0
+        specifier: ^23.0.1
         version: 23.2.0
       pino-pretty:
         specifier: 4.5.0
         version: 4.5.0
       react:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0
       react-dom:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0(react@18.3.0)
       react-router-dom:
-        specifier: ^6.23.0
+        specifier: ^6.16.0
         version: 6.23.0(react-dom@18.3.0)(react@18.3.0)
       sass:
-        specifier: ^1.75.0
+        specifier: ^1.69.5
         version: 1.75.0
       vitest:
         specifier: 1.2.1
         version: 1.2.1(@types/node@20.12.7)(jsdom@23.2.0)(sass@1.75.0)
       webpack:
-        specifier: ^5.91.0
+        specifier: ^5.88.2
         version: 5.91.0
 
   tailwind-library/ui/textfield:
     dependencies:
       '@apollo/client':
-        specifier: ^3.10.1
+        specifier: ^3.8.8
         version: 3.10.1(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.3.0)(react@18.3.0)
       '@mdx-js/mdx':
         specifier: ^1.6.22
@@ -1183,19 +1183,19 @@ importers:
         specifier: 6.4.2
         version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
-        specifier: ^14.3.1
+        specifier: ^14.2.1
         version: 14.3.1(react-dom@18.3.0)(react@18.3.0)
       '@types/jest':
-        specifier: ^29.5.12
+        specifier: ^29.2.2
         version: 29.5.12
       '@types/react':
         specifier: 18.2.23
         version: 18.2.23
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: ^18.2.5
         version: 18.3.0
       '@types/testing-library__jest-dom':
-        specifier: ^5.14.9
+        specifier: ^5.9.5
         version: 5.14.9
       '@typescript-eslint/eslint-plugin':
         specifier: 6.19.1
@@ -1231,28 +1231,28 @@ importers:
         specifier: ^16.8.1
         version: 16.8.1
       jsdom:
-        specifier: ^23.2.0
+        specifier: ^23.0.1
         version: 23.2.0
       pino-pretty:
         specifier: 4.5.0
         version: 4.5.0
       react:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0
       react-dom:
-        specifier: ^18.3.0
+        specifier: ^18.0.0
         version: 18.3.0(react@18.3.0)
       react-router-dom:
-        specifier: ^6.23.0
+        specifier: ^6.16.0
         version: 6.23.0(react-dom@18.3.0)(react@18.3.0)
       sass:
-        specifier: ^1.75.0
+        specifier: ^1.69.5
         version: 1.75.0
       vitest:
         specifier: 1.2.1
         version: 1.2.1(@types/node@20.12.7)(jsdom@23.2.0)(sass@1.75.0)
       webpack:
-        specifier: ^5.91.0
+        specifier: ^5.88.2
         version: 5.91.0
 
 packages:
@@ -1391,7 +1391,7 @@ packages:
       '@babel/parser': 7.24.4
       '@babel/template': 7.24.0
       '@babel/traverse': 7.24.1
-      '@babel/types': 7.22.3
+      '@babel/types': 7.24.0
       convert-source-map: 1.9.0
       debug: 4.3.4
       gensync: 1.0.0-beta.2
@@ -1975,7 +1975,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.11.6
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.24.0
       '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.11.6)
       '@babel/plugin-transform-parameters': 7.24.1(@babel/core@7.11.6)
 
@@ -1986,7 +1986,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.24.0
       '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.12.9)
       '@babel/plugin-transform-parameters': 7.24.1(@babel/core@7.12.9)
 
@@ -5167,7 +5167,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 18.19.31
+      '@types/node': 20.12.7
       chalk: 4.1.2
       jest-message-util: 29.7.0
       jest-util: 29.7.0
@@ -5187,14 +5187,14 @@ packages:
       '@jest/test-result': 29.7.0
       '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 18.19.31
+      '@types/node': 20.12.7
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       ci-info: 3.9.0
       exit: 0.1.2
       graceful-fs: 4.2.11
       jest-changed-files: 29.7.0
-      jest-config: 29.7.0(@types/node@18.19.31)
+      jest-config: 29.7.0(@types/node@20.12.7)
       jest-haste-map: 29.7.0
       jest-message-util: 29.7.0
       jest-regex-util: 29.6.3
@@ -5276,7 +5276,7 @@ packages:
       '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
       '@jridgewell/trace-mapping': 0.3.25
-      '@types/node': 18.19.31
+      '@types/node': 20.12.7
       chalk: 4.1.2
       collect-v8-coverage: 1.0.2
       exit: 0.1.2
@@ -5367,7 +5367,7 @@ packages:
       '@jest/schemas': 29.6.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 18.19.31
+      '@types/node': 20.12.7
       '@types/yargs': 17.0.32
       chalk: 4.1.2
 
@@ -5831,7 +5831,7 @@ packages:
     resolution: {integrity: sha512-BcCkm/STipKvbCl6b7QFrMh/vx00vIP63k2eM66MfHJzPr6O2U0jYEViXkHJWqXqQYjdeA9cuCl5KWmlwjDvbA==}
     engines: {node: '>=14'}
     peerDependencies:
-      '@babel/core': '*'
+      '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.24.4
 
@@ -6303,8 +6303,8 @@ packages:
   /@teambit/base-ui.surfaces.split-pane.splitter@1.0.0(react-dom@18.3.0)(react@18.3.0):
     resolution: {integrity: sha512-5/oGHEUOQQnQUi2911fLb/rdFLLDoMy1G4fQ4DNkqoHcahi1a26tCtKlV+7FAI1LsFdk0V+wRp6WY+kX+Qbsxw==, tarball: https://registry.npmjs.org/@teambit/base-ui.surfaces.split-pane.splitter/-/base-ui.surfaces.split-pane.splitter-1.0.0.tgz}
     peerDependencies:
-      react: '*'
-      react-dom: '*'
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
     dependencies:
       classnames: 2.2.6
       core-js: 3.37.0
@@ -6803,7 +6803,7 @@ packages:
     resolution: {integrity: sha512-PsA3S56Zw6mMKuUm+RkQ5HzxrgEC0XzBSlICjgejpjXqSA8eKFn4IJfhPCpH4KPeaCMvWIkaRoJ5FZZMDYSJqw==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
-      react: '*'
+      react: 17.0.2
     dependencies:
       react: 18.3.0
 
@@ -6890,8 +6890,8 @@ packages:
     resolution: {integrity: sha1-vQV7Te5JyvHLSgtDRcCjbwF7v6E=, tarball: https://node-registry.bit.cloud/@teambit/design.ui.error-page/-/@teambit-design.ui.error-page-0.0.364.tgz}
     engines: {node: '>=12.22.0'}
     peerDependencies:
-      react: '*'
-      react-dom: '*'
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
     dependencies:
       '@teambit/base-react.navigation.link': 2.0.27(@testing-library/react@14.3.1)(@types/react@18.2.23)(react-dom@18.3.0)(react@18.3.0)
       '@teambit/community.constants.links': 0.0.2
@@ -9436,7 +9436,7 @@ packages:
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
       '@adobe/css-tools': 4.3.3
-      '@babel/runtime': 7.20.0
+      '@babel/runtime': 7.24.4
       '@types/testing-library__jest-dom': 5.14.9
       aria-query: 5.3.0
       chalk: 3.0.0
@@ -9603,7 +9603,7 @@ packages:
   /@types/graceful-fs@4.1.9:
     resolution: {integrity: sha512-olP3sd1qOEe5dXTSaFvQG+02VdRXcdytWLAZsAq1PecU8uqQAhkrnbli7DagjtXKW/Bl7YJbUsa8MPcuc8LHEQ==}
     dependencies:
-      '@types/node': 18.19.31
+      '@types/node': 20.12.7
 
   /@types/hast@2.3.10:
     resolution: {integrity: sha512-McWspRw8xx8J9HurkVBfYj0xKoE25tOFlHGdx4MJ5xORQrMGZNqJhVQWaIbm6Oyla5kYOXtDiopzKRJzEOkwJw==}
@@ -10664,7 +10664,7 @@ packages:
     resolution: {integrity: sha512-o/HelwhuKpTj/frsOsbNLNgnNGVIFsVP/SW2BSF14gVl7kAfMOJ6/8wUAUvG1R1NHKrfG+2sHZTu0yauT1qBrA==}
     engines: {node: '>=6.0'}
     dependencies:
-      '@babel/runtime': 7.20.0
+      '@babel/runtime': 7.24.4
       '@babel/runtime-corejs3': 7.24.4
 
   /aria-query@5.1.3:
@@ -11921,12 +11921,12 @@ packages:
     peerDependencies:
       webpack: ^5.0.0
     dependencies:
-      icss-utils: 5.1.0(postcss@8.4.19)
-      postcss: 8.4.19
-      postcss-modules-extract-imports: 3.1.0(postcss@8.4.19)
-      postcss-modules-local-by-default: 4.0.5(postcss@8.4.19)
-      postcss-modules-scope: 3.2.0(postcss@8.4.19)
-      postcss-modules-values: 4.0.0(postcss@8.4.19)
+      icss-utils: 5.1.0(postcss@8.4.38)
+      postcss: 8.4.38
+      postcss-modules-extract-imports: 3.1.0(postcss@8.4.38)
+      postcss-modules-local-by-default: 4.0.5(postcss@8.4.38)
+      postcss-modules-scope: 3.2.0(postcss@8.4.38)
+      postcss-modules-values: 4.0.0(postcss@8.4.38)
       postcss-value-parser: 4.2.0
       semver: 7.6.0
       webpack: 5.91.0(esbuild@0.14.29)
@@ -13317,7 +13317,7 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7
     dependencies:
-      '@babel/runtime': 7.20.0
+      '@babel/runtime': 7.24.4
       aria-query: 4.2.2
       array-includes: 3.1.8
       ast-types-flow: 0.0.7
@@ -14722,14 +14722,6 @@ packages:
     dependencies:
       safer-buffer: 2.1.2
 
-  /icss-utils@5.1.0(postcss@8.4.19):
-    resolution: {integrity: sha512-soFhflCVWLfRNOPU3iv5Z9VUdT44xFRbzjLsEzSr5AQmgqPMTHdU3PMT1Cf1ssx8fLNJDA1juftYl+PUcv3MqA==}
-    engines: {node: ^10 || ^12 || >= 14}
-    peerDependencies:
-      postcss: ^8.1.0
-    dependencies:
-      postcss: 8.4.19
-
   /icss-utils@5.1.0(postcss@8.4.38):
     resolution: {integrity: sha512-soFhflCVWLfRNOPU3iv5Z9VUdT44xFRbzjLsEzSr5AQmgqPMTHdU3PMT1Cf1ssx8fLNJDA1juftYl+PUcv3MqA==}
     engines: {node: ^10 || ^12 || >= 14}
@@ -15207,7 +15199,7 @@ packages:
       '@jest/expect': 29.7.0
       '@jest/test-result': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 18.19.31
+      '@types/node': 20.12.7
       chalk: 4.1.2
       co: 4.6.0
       dedent: 1.5.3
@@ -15413,7 +15405,7 @@ packages:
       '@jest/environment': 29.7.0
       '@jest/fake-timers': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 18.19.31
+      '@types/node': 20.12.7
       jest-mock: 29.7.0
       jest-util: 29.7.0
 
@@ -15427,7 +15419,7 @@ packages:
     dependencies:
       '@jest/types': 29.6.3
       '@types/graceful-fs': 4.1.9
-      '@types/node': 18.19.31
+      '@types/node': 20.12.7
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -15538,7 +15530,7 @@ packages:
       '@jest/test-result': 29.7.0
       '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 18.19.31
+      '@types/node': 20.12.7
       chalk: 4.1.2
       emittery: 0.13.1
       graceful-fs: 4.2.11
@@ -15568,7 +15560,7 @@ packages:
       '@jest/test-result': 29.7.0
       '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 18.19.31
+      '@types/node': 20.12.7
       chalk: 4.1.2
       cjs-module-lexer: 1.2.3
       collect-v8-coverage: 1.0.2
@@ -15641,7 +15633,7 @@ packages:
     dependencies:
       '@jest/test-result': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 18.19.31
+      '@types/node': 20.12.7
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       emittery: 0.13.1
@@ -17813,14 +17805,6 @@ packages:
       postcss: 8.4.38
       postcss-selector-parser: 6.0.16
 
-  /postcss-modules-extract-imports@3.1.0(postcss@8.4.19):
-    resolution: {integrity: sha512-k3kNe0aNFQDAZGbin48pL2VNidTF0w4/eASDsxlyspobzU3wZQLOGj7L9gfRe0Jo9/4uud09DsjFNH7winGv8Q==}
-    engines: {node: ^10 || ^12 || >= 14}
-    peerDependencies:
-      postcss: ^8.1.0
-    dependencies:
-      postcss: 8.4.19
-
   /postcss-modules-extract-imports@3.1.0(postcss@8.4.38):
     resolution: {integrity: sha512-k3kNe0aNFQDAZGbin48pL2VNidTF0w4/eASDsxlyspobzU3wZQLOGj7L9gfRe0Jo9/4uud09DsjFNH7winGv8Q==}
     engines: {node: ^10 || ^12 || >= 14}
@@ -17828,17 +17812,6 @@ packages:
       postcss: ^8.1.0
     dependencies:
       postcss: 8.4.38
-
-  /postcss-modules-local-by-default@4.0.5(postcss@8.4.19):
-    resolution: {integrity: sha512-6MieY7sIfTK0hYfafw1OMEG+2bg8Q1ocHCpoWLqOKj3JXlKu4G7btkmM/B7lFubYkYWmRSPLZi5chid63ZaZYw==}
-    engines: {node: ^10 || ^12 || >= 14}
-    peerDependencies:
-      postcss: ^8.1.0
-    dependencies:
-      icss-utils: 5.1.0(postcss@8.4.19)
-      postcss: 8.4.19
-      postcss-selector-parser: 6.0.16
-      postcss-value-parser: 4.2.0
 
   /postcss-modules-local-by-default@4.0.5(postcss@8.4.38):
     resolution: {integrity: sha512-6MieY7sIfTK0hYfafw1OMEG+2bg8Q1ocHCpoWLqOKj3JXlKu4G7btkmM/B7lFubYkYWmRSPLZi5chid63ZaZYw==}
@@ -17851,15 +17824,6 @@ packages:
       postcss-selector-parser: 6.0.16
       postcss-value-parser: 4.2.0
 
-  /postcss-modules-scope@3.2.0(postcss@8.4.19):
-    resolution: {integrity: sha512-oq+g1ssrsZOsx9M96c5w8laRmvEu9C3adDSjI8oTcbfkrTE8hx/zfyobUoWIxaKPO8bt6S62kxpw5GqypEw1QQ==}
-    engines: {node: ^10 || ^12 || >= 14}
-    peerDependencies:
-      postcss: ^8.1.0
-    dependencies:
-      postcss: 8.4.19
-      postcss-selector-parser: 6.0.16
-
   /postcss-modules-scope@3.2.0(postcss@8.4.38):
     resolution: {integrity: sha512-oq+g1ssrsZOsx9M96c5w8laRmvEu9C3adDSjI8oTcbfkrTE8hx/zfyobUoWIxaKPO8bt6S62kxpw5GqypEw1QQ==}
     engines: {node: ^10 || ^12 || >= 14}
@@ -17868,15 +17832,6 @@ packages:
     dependencies:
       postcss: 8.4.38
       postcss-selector-parser: 6.0.16
-
-  /postcss-modules-values@4.0.0(postcss@8.4.19):
-    resolution: {integrity: sha512-RDxHkAiEGI78gS2ofyvCsu7iycRv7oqw5xMWn9iMoR0N/7mf9D50ecQqUo5BZ9Zh2vH4bCUR/ktCqbB9m8vJjQ==}
-    engines: {node: ^10 || ^12 || >= 14}
-    peerDependencies:
-      postcss: ^8.1.0
-    dependencies:
-      icss-utils: 5.1.0(postcss@8.4.19)
-      postcss: 8.4.19
 
   /postcss-modules-values@4.0.0(postcss@8.4.38):
     resolution: {integrity: sha512-RDxHkAiEGI78gS2ofyvCsu7iycRv7oqw5xMWn9iMoR0N/7mf9D50ecQqUo5BZ9Zh2vH4bCUR/ktCqbB9m8vJjQ==}
@@ -18706,7 +18661,7 @@ packages:
   /regenerator-transform@0.15.2:
     resolution: {integrity: sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==}
     dependencies:
-      '@babel/runtime': 7.20.0
+      '@babel/runtime': 7.24.4
 
   /regex-parser@2.3.0:
     resolution: {integrity: sha512-TVILVSz2jY5D47F4mA4MppkBrafEaiUWJO/TcZHEIuI13AqoZMkK1WMA4Om1YkYbTx+9Ki1/tSUXbceyr9saRg==}
@@ -18944,7 +18899,7 @@ packages:
       adjust-sourcemap-loader: 4.0.0
       convert-source-map: 1.9.0
       loader-utils: 2.0.4
-      postcss: 8.4.19
+      postcss: 8.4.38
       source-map: 0.6.1
 
   /resolve.exports@2.0.2:
@@ -20247,7 +20202,7 @@ packages:
       extend: 3.0.2
       is-plain-obj: 2.1.0
       trough: 1.0.5
-      vfile: 4.2.0
+      vfile: 4.2.1
 
   /unified@9.2.0:
     resolution: {integrity: sha512-vx2Z0vY+a3YoTj8+pttM3tiJHCwY5UFbYdiWrwBEbHmK8pvsPj2rtAX2BFfgXen8T39CJWblWRDT4L5WGXtDdg==}

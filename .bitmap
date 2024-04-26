@@ -12,70 +12,51 @@
     "config/tailwind": {
         "name": "config/tailwind",
         "scope": "learnbit-react.tailwind-library",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "tailwind-library/config/tailwind"
     },
     "demo": {
         "name": "demo",
         "scope": "learnbit-react.tailwind-library",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "tailwind-library/demo"
     },
     "envs/tw-react-env": {
         "name": "envs/tw-react-env",
         "scope": "learnbit-react.tailwind-library",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "tailwind-library/envs/tw-react-env"
     },
     "theme": {
         "name": "theme",
-        "scope": "",
-        "version": "",
-        "defaultScope": "learnbit-react.tailwind-library",
+        "scope": "learnbit-react.tailwind-library",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "tailwind-library/theme",
-        "config": {
-            "teambit.node/node@1.0.54": {},
-            "teambit.envs/envs": {
-                "env": "teambit.node/node"
-            }
-        }
+        "rootDir": "tailwind-library/theme"
     },
     "ui/button": {
         "name": "ui/button",
         "scope": "learnbit-react.tailwind-library",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "tailwind-library/ui/button"
     },
     "ui/switch": {
         "name": "ui/switch",
         "scope": "learnbit-react.tailwind-library",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
-        "rootDir": "tailwind-library/ui/switch",
-        "config": {
-            "learnbit-react.tailwind-library/envs/tw-react-env": {},
-            "teambit.envs/envs": {
-                "env": "learnbit-react.tailwind-library/envs/tw-react-env"
-            }
-        }
+        "rootDir": "tailwind-library/ui/switch"
     },
     "ui/textfield": {
         "name": "ui/textfield",
         "scope": "learnbit-react.tailwind-library",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "tailwind-library/ui/textfield",
-        "config": {
-            "learnbit-react.tailwind-library/envs/tw-react-env": {},
-            "teambit.envs/envs": {
-                "env": "learnbit-react.tailwind-library/envs/tw-react-env"
-            }
-        }
+        "rootDir": "tailwind-library/ui/textfield"
     },
     "$schema-version": "17.0.0"
 }
