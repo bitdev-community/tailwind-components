@@ -1,4 +1,5 @@
 import { Plugin, type Config } from '@frontend/tailwind.plugin';
+import { theme } from '@learnbit-react/tailwind-library.theme'
 
 const bitPlugin = new Plugin({
   components: ['@learnbit-react/tailwind-library.ui.**'],
@@ -7,9 +8,7 @@ const bitPlugin = new Plugin({
 });
 
 const config: Config = {
-  theme: {
-    extend: {},
-  },
+  theme: theme(),
   plugins: [bitPlugin.apply()],
 };
 
