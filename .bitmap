@@ -30,6 +30,20 @@
         "mainFile": "index.ts",
         "rootDir": "tailwind-library/envs/tw-react-env"
     },
+    "theme": {
+        "name": "theme",
+        "scope": "",
+        "version": "",
+        "defaultScope": "learnbit-react.tailwind-library",
+        "mainFile": "index.ts",
+        "rootDir": "tailwind-library/theme",
+        "config": {
+            "teambit.node/node@1.0.54": {},
+            "teambit.envs/envs": {
+                "env": "teambit.node/node"
+            }
+        }
+    },
     "ui/button": {
         "name": "ui/button",
         "scope": "learnbit-react.tailwind-library",

@@ -13,16 +13,16 @@ importers:
         version: 3.9.11(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@bitdev/general.envs.bit-env':
         specifier: ^1.0.1
-        version: 1.0.1(@testing-library/react@14.3.1)(@types/node@20.12.7)(@types/react@18.2.23)(graphql@16.8.1)(jsdom@23.2.0)(sass@1.75.0)
+        version: 1.0.1(@testing-library/react@14.3.1)(@types/node@20.12.7)(@types/react@18.2.23)(graphql@16.8.1)(jest@29.3.1)(jsdom@23.2.0)(sass@1.75.0)
       '@bitdev/node.node-env':
         specifier: ^1.0.26
-        version: 1.0.26(@testing-library/react@14.3.1)(@types/react@18.2.23)(jsdom@23.2.0)(sass@1.75.0)
+        version: 1.0.26(@testing-library/react@14.3.1)(@types/react@18.2.23)(jest@29.3.1)(jsdom@23.2.0)(sass@1.75.0)
       '@bitdev/react.app-types.vite-react':
         specifier: ^2.0.0
         version: 2.0.0(@types/node@20.12.7)(sass@1.75.0)
       '@bitdev/react.react-env':
         specifier: ^2.0.2
-        version: 2.0.2(@types/node@20.12.7)
+        version: 2.0.2(@types/node@20.12.7)(jest@29.3.1)
       '@frontend/tailwind.plugin':
         specifier: ^1.0.1
         version: 1.0.1(tailwindcss@3.4.3)
@@ -55,7 +55,7 @@ importers:
         version: 0.0.33
       '@testing-library/jest-dom':
         specifier: 6.4.2
-        version: 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
         specifier: ^14.2.1
         version: 14.3.1(react-dom@18.2.0)(react@18.2.0)
@@ -94,7 +94,7 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
       eslint-plugin-jest:
         specifier: 27.6.3
-        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y:
         specifier: 6.8.0
         version: 6.8.0(eslint@8.56.0)
@@ -116,6 +116,9 @@ importers:
       graphql-tag:
         specifier: ^2.12.6
         version: 2.12.6(graphql@16.8.1)
+      jest:
+        specifier: 29.3.1
+        version: 29.3.1(@types/node@20.12.7)
       jsdom:
         specifier: ^23.0.1
         version: 23.2.0
@@ -146,30 +149,37 @@ importers:
       webpack:
         specifier: ^5.88.2
         version: 5.91.0
+    devDependencies:
+      '@teambit/node.node':
+        specifier: 1.0.54
+        version: 1.0.54(@testing-library/react@14.3.1)(@types/node@20.12.7)(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(graphql@16.8.1)
 
   node_modules/.bit_roots/bitdev.general_envs_bit-env@1.0.1:
     dependencies:
       '@bitdev/general.envs.bit-env':
         specifier: 1.0.1
-        version: 1.0.1(@testing-library/react@14.3.1)(@types/node@20.12.7)(@types/react@18.2.23)(graphql@16.8.1)(jsdom@23.2.0)(sass@1.75.0)
+        version: 1.0.1(@testing-library/react@14.3.1)(@types/node@20.12.7)(@types/react@18.2.23)(graphql@16.8.1)(jest@29.3.1)(jsdom@23.2.0)(sass@1.75.0)
       '@learnbit-react/tailwind-library.config.tailwind':
         specifier: workspace:*
-        version: file:tailwind-library/config/tailwind(@types/react@18.2.23)(jsdom@23.2.0)(react@18.2.0)(sass@1.75.0)
+        version: file:tailwind-library/config/tailwind(@types/react@18.2.23)(jest@29.3.1)(jsdom@23.2.0)(react@18.2.0)(sass@1.75.0)
       '@learnbit-react/tailwind-library.demo':
         specifier: workspace:*
-        version: file:tailwind-library/demo(@types/node@20.12.7)(react-dom@18.2.0)(react@18.2.0)
+        version: file:tailwind-library/demo(@types/node@20.12.7)(jest@29.3.1)(react-dom@18.2.0)(react@18.2.0)
       '@learnbit-react/tailwind-library.envs.tw-react-env':
         specifier: workspace:*
-        version: file:tailwind-library/envs/tw-react-env(@types/node@20.12.7)
+        version: file:tailwind-library/envs/tw-react-env(@types/node@20.12.7)(jest@29.3.1)
+      '@learnbit-react/tailwind-library.theme':
+        specifier: workspace:*
+        version: file:tailwind-library/theme(@types/node@20.12.7)
       '@learnbit-react/tailwind-library.ui.button':
         specifier: workspace:*
-        version: file:tailwind-library/ui/button(@types/node@20.12.7)(react@18.2.0)
+        version: file:tailwind-library/ui/button(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
       '@learnbit-react/tailwind-library.ui.switch':
         specifier: workspace:*
-        version: file:tailwind-library/ui/switch(@types/node@20.12.7)(react@18.2.0)
+        version: file:tailwind-library/ui/switch(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
       '@learnbit-react/tailwind-library.ui.textfield':
         specifier: workspace:*
-        version: file:tailwind-library/ui/textfield(@types/node@20.12.7)(react@18.2.0)
+        version: file:tailwind-library/ui/textfield(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
       '@mdx-js/react':
         specifier: 1.6.22
         version: 1.6.22(react@18.2.0)
@@ -190,7 +200,7 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
       eslint-plugin-jest:
         specifier: 27.6.3
-        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y:
         specifier: 6.8.0
         version: 6.8.0(eslint@8.56.0)
@@ -216,6 +226,8 @@ importers:
         injected: true
       '@learnbit-react/tailwind-library.envs.tw-react-env':
         injected: true
+      '@learnbit-react/tailwind-library.theme':
+        injected: true
       '@learnbit-react/tailwind-library.ui.button':
         injected: true
       '@learnbit-react/tailwind-library.ui.switch':
@@ -227,25 +239,28 @@ importers:
     dependencies:
       '@bitdev/node.node-env':
         specifier: 1.0.26
-        version: 1.0.26(@testing-library/react@14.3.1)(@types/react@18.2.23)(jsdom@23.2.0)(sass@1.75.0)
+        version: 1.0.26(@testing-library/react@14.3.1)(@types/react@18.2.23)(jest@29.3.1)(jsdom@23.2.0)(sass@1.75.0)
       '@learnbit-react/tailwind-library.config.tailwind':
         specifier: workspace:*
-        version: file:tailwind-library/config/tailwind(@types/react@18.2.23)(jsdom@23.2.0)(react@18.2.0)(sass@1.75.0)
+        version: file:tailwind-library/config/tailwind(@types/react@18.2.23)(jest@29.3.1)(jsdom@23.2.0)(react@18.2.0)(sass@1.75.0)
       '@learnbit-react/tailwind-library.demo':
         specifier: workspace:*
-        version: file:tailwind-library/demo(@types/node@20.12.7)(react-dom@18.2.0)(react@18.2.0)
+        version: file:tailwind-library/demo(@types/node@20.12.7)(jest@29.3.1)(react-dom@18.2.0)(react@18.2.0)
       '@learnbit-react/tailwind-library.envs.tw-react-env':
         specifier: workspace:*
-        version: file:tailwind-library/envs/tw-react-env(@types/node@20.12.7)
+        version: file:tailwind-library/envs/tw-react-env(@types/node@20.12.7)(jest@29.3.1)
+      '@learnbit-react/tailwind-library.theme':
+        specifier: workspace:*
+        version: file:tailwind-library/theme(@types/node@20.12.7)
       '@learnbit-react/tailwind-library.ui.button':
         specifier: workspace:*
-        version: file:tailwind-library/ui/button(@types/node@20.12.7)(react@18.2.0)
+        version: file:tailwind-library/ui/button(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
       '@learnbit-react/tailwind-library.ui.switch':
         specifier: workspace:*
-        version: file:tailwind-library/ui/switch(@types/node@20.12.7)(react@18.2.0)
+        version: file:tailwind-library/ui/switch(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
       '@learnbit-react/tailwind-library.ui.textfield':
         specifier: workspace:*
-        version: file:tailwind-library/ui/textfield(@types/node@20.12.7)(react@18.2.0)
+        version: file:tailwind-library/ui/textfield(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
       '@mdx-js/react':
         specifier: 1.6.22
         version: 1.6.22(react@18.2.0)
@@ -272,7 +287,7 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
       eslint-plugin-jest:
         specifier: 27.6.3
-        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y:
         specifier: 6.8.0
         version: 6.8.0(eslint@8.56.0)
@@ -307,6 +322,8 @@ importers:
         injected: true
       '@learnbit-react/tailwind-library.envs.tw-react-env':
         injected: true
+      '@learnbit-react/tailwind-library.theme':
+        injected: true
       '@learnbit-react/tailwind-library.ui.button':
         injected: true
       '@learnbit-react/tailwind-library.ui.switch':
@@ -327,22 +344,25 @@ importers:
         version: 1.0.1(tailwindcss@3.4.3)
       '@learnbit-react/tailwind-library.config.tailwind':
         specifier: workspace:*
-        version: file:tailwind-library/config/tailwind(@types/react@18.2.23)(jsdom@23.2.0)(react@18.2.0)(sass@1.75.0)
+        version: file:tailwind-library/config/tailwind(@types/react@18.2.23)(jest@29.3.1)(jsdom@23.2.0)(react@18.2.0)(sass@1.75.0)
       '@learnbit-react/tailwind-library.demo':
         specifier: workspace:*
-        version: file:tailwind-library/demo(@types/node@20.12.7)(react-dom@18.2.0)(react@18.2.0)
+        version: file:tailwind-library/demo(@types/node@20.12.7)(jest@29.3.1)(react-dom@18.2.0)(react@18.2.0)
       '@learnbit-react/tailwind-library.envs.tw-react-env':
         specifier: workspace:*
-        version: file:tailwind-library/envs/tw-react-env(@types/node@20.12.7)
+        version: file:tailwind-library/envs/tw-react-env(@types/node@20.12.7)(jest@29.3.1)
+      '@learnbit-react/tailwind-library.theme':
+        specifier: workspace:*
+        version: file:tailwind-library/theme(@types/node@20.12.7)
       '@learnbit-react/tailwind-library.ui.button':
         specifier: workspace:*
-        version: file:tailwind-library/ui/button(@types/node@20.12.7)(react@18.2.0)
+        version: file:tailwind-library/ui/button(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
       '@learnbit-react/tailwind-library.ui.switch':
         specifier: workspace:*
-        version: file:tailwind-library/ui/switch(@types/node@20.12.7)(react@18.2.0)
+        version: file:tailwind-library/ui/switch(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
       '@learnbit-react/tailwind-library.ui.textfield':
         specifier: workspace:*
-        version: file:tailwind-library/ui/textfield(@types/node@20.12.7)(react@18.2.0)
+        version: file:tailwind-library/ui/textfield(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
       '@mdx-js/mdx':
         specifier: ^1.6.22
         version: 1.6.22
@@ -357,7 +377,7 @@ importers:
         version: 1.0.7(@types/react@18.2.23)(react@18.2.0)
       '@testing-library/jest-dom':
         specifier: 6.4.2
-        version: 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
         specifier: ^14.2.1
         version: 14.3.1(react-dom@18.2.0)(react@18.2.0)
@@ -393,7 +413,7 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
       eslint-plugin-jest:
         specifier: 27.6.3
-        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y:
         specifier: 6.8.0
         version: 6.8.0(eslint@8.56.0)
@@ -446,6 +466,8 @@ importers:
         injected: true
       '@learnbit-react/tailwind-library.envs.tw-react-env':
         injected: true
+      '@learnbit-react/tailwind-library.theme':
+        injected: true
       '@learnbit-react/tailwind-library.ui.button':
         injected: true
       '@learnbit-react/tailwind-library.ui.switch':
@@ -460,22 +482,25 @@ importers:
         version: 3.9.11(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@learnbit-react/tailwind-library.config.tailwind':
         specifier: workspace:*
-        version: file:tailwind-library/config/tailwind(@types/react@18.2.23)(jsdom@23.2.0)(react@18.2.0)(sass@1.75.0)
+        version: file:tailwind-library/config/tailwind(@types/react@18.2.23)(jest@29.3.1)(jsdom@23.2.0)(react@18.2.0)(sass@1.75.0)
       '@learnbit-react/tailwind-library.demo':
         specifier: workspace:*
-        version: file:tailwind-library/demo(@types/node@20.12.7)(react-dom@18.2.0)(react@18.2.0)
+        version: file:tailwind-library/demo(@types/node@20.12.7)(jest@29.3.1)(react-dom@18.2.0)(react@18.2.0)
       '@learnbit-react/tailwind-library.envs.tw-react-env':
         specifier: workspace:*
-        version: file:tailwind-library/envs/tw-react-env(@types/node@20.12.7)
+        version: file:tailwind-library/envs/tw-react-env(@types/node@20.12.7)(jest@29.3.1)
+      '@learnbit-react/tailwind-library.theme':
+        specifier: workspace:*
+        version: file:tailwind-library/theme(@types/node@20.12.7)
       '@learnbit-react/tailwind-library.ui.button':
         specifier: workspace:*
-        version: file:tailwind-library/ui/button(@types/node@20.12.7)(react@18.2.0)
+        version: file:tailwind-library/ui/button(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
       '@learnbit-react/tailwind-library.ui.switch':
         specifier: workspace:*
-        version: file:tailwind-library/ui/switch(@types/node@20.12.7)(react@18.2.0)
+        version: file:tailwind-library/ui/switch(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
       '@learnbit-react/tailwind-library.ui.textfield':
         specifier: workspace:*
-        version: file:tailwind-library/ui/textfield(@types/node@20.12.7)(react@18.2.0)
+        version: file:tailwind-library/ui/textfield(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
       '@mdx-js/mdx':
         specifier: ^1.6.22
         version: 1.6.22
@@ -487,7 +512,7 @@ importers:
         version: 1.0.7(@types/react@18.2.23)(react@18.2.0)
       '@testing-library/jest-dom':
         specifier: 6.4.2
-        version: 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
         specifier: ^14.2.1
         version: 14.3.1(react-dom@18.2.0)(react@18.2.0)
@@ -520,7 +545,7 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
       eslint-plugin-jest:
         specifier: 27.6.3
-        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y:
         specifier: 6.8.0
         version: 6.8.0(eslint@8.56.0)
@@ -566,6 +591,71 @@ importers:
       '@learnbit-react/tailwind-library.demo':
         injected: true
       '@learnbit-react/tailwind-library.envs.tw-react-env':
+        injected: true
+      '@learnbit-react/tailwind-library.theme':
+        injected: true
+      '@learnbit-react/tailwind-library.ui.button':
+        injected: true
+      '@learnbit-react/tailwind-library.ui.switch':
+        injected: true
+      '@learnbit-react/tailwind-library.ui.textfield':
+        injected: true
+
+  node_modules/.bit_roots/teambit.node_node@1.0.54:
+    dependencies:
+      '@learnbit-react/tailwind-library.config.tailwind':
+        specifier: workspace:*
+        version: file:tailwind-library/config/tailwind(@types/react@18.2.23)(jest@29.3.1)(jsdom@23.2.0)(react@18.2.0)(sass@1.75.0)
+      '@learnbit-react/tailwind-library.demo':
+        specifier: workspace:*
+        version: file:tailwind-library/demo(@types/node@20.12.7)(jest@29.3.1)(react-dom@18.2.0)(react@18.2.0)
+      '@learnbit-react/tailwind-library.envs.tw-react-env':
+        specifier: workspace:*
+        version: file:tailwind-library/envs/tw-react-env(@types/node@20.12.7)(jest@29.3.1)
+      '@learnbit-react/tailwind-library.theme':
+        specifier: workspace:*
+        version: file:tailwind-library/theme(@types/node@20.12.7)
+      '@learnbit-react/tailwind-library.ui.button':
+        specifier: workspace:*
+        version: file:tailwind-library/ui/button(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
+      '@learnbit-react/tailwind-library.ui.switch':
+        specifier: workspace:*
+        version: file:tailwind-library/ui/switch(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
+      '@learnbit-react/tailwind-library.ui.textfield':
+        specifier: workspace:*
+        version: file:tailwind-library/ui/textfield(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
+      '@mdx-js/react':
+        specifier: 1.6.22
+        version: 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context':
+        specifier: 1.0.0
+        version: 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@teambit/node.node':
+        specifier: 1.0.54
+        version: 1.0.54(@testing-library/react@14.3.1)(@types/node@20.12.7)(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(graphql@16.8.1)
+      '@types/react':
+        specifier: 18.2.23
+        version: 18.2.23
+      '@types/react-dom':
+        specifier: ^18.2.5
+        version: 18.2.25
+      jest:
+        specifier: 29.3.1
+        version: 29.3.1(@types/node@20.12.7)
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.2.0(react@18.2.0)
+    dependenciesMeta:
+      '@learnbit-react/tailwind-library.config.tailwind':
+        injected: true
+      '@learnbit-react/tailwind-library.demo':
+        injected: true
+      '@learnbit-react/tailwind-library.envs.tw-react-env':
+        injected: true
+      '@learnbit-react/tailwind-library.theme':
         injected: true
       '@learnbit-react/tailwind-library.ui.button':
         injected: true
@@ -602,7 +692,7 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
       eslint-plugin-jest:
         specifier: 27.6.3
-        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y:
         specifier: 6.8.0
         version: 6.8.0(eslint@8.56.0)
@@ -636,7 +726,7 @@ importers:
     devDependencies:
       '@bitdev/node.node-env':
         specifier: ^1.0.26
-        version: 1.0.26(@testing-library/react@14.3.1)(@types/react@18.2.23)(jsdom@23.2.0)(sass@1.75.0)
+        version: 1.0.26(@testing-library/react@14.3.1)(@types/react@18.2.23)(jest@29.3.1)(jsdom@23.2.0)(sass@1.75.0)
 
   tailwind-library/demo:
     dependencies:
@@ -663,7 +753,7 @@ importers:
         version: 1.0.7(@types/react@18.2.23)(react@18.2.0)
       '@testing-library/jest-dom':
         specifier: 6.4.2
-        version: 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
         specifier: ^14.2.1
         version: 14.3.1(react-dom@18.2.0)(react@18.2.0)
@@ -699,7 +789,7 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
       eslint-plugin-jest:
         specifier: 27.6.3
-        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y:
         specifier: 6.8.0
         version: 6.8.0(eslint@8.56.0)
@@ -753,7 +843,7 @@ importers:
         version: 3.9.11(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@bitdev/react.react-env':
         specifier: ^2.0.2
-        version: 2.0.2(@types/node@20.12.7)
+        version: 2.0.2(@types/node@20.12.7)(jest@29.3.1)
       '@frontend/tailwind.transformers.tailwind':
         specifier: ^1.0.0
         version: 1.0.0(react@18.2.0)
@@ -780,7 +870,7 @@ importers:
         version: 0.0.33
       '@testing-library/jest-dom':
         specifier: 6.4.2
-        version: 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
         specifier: ^14.2.1
         version: 14.3.1(react-dom@18.2.0)(react@18.2.0)
@@ -813,7 +903,7 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
       eslint-plugin-jest:
         specifier: 27.6.3
-        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y:
         specifier: 6.8.0
         version: 6.8.0(eslint@8.56.0)
@@ -856,10 +946,44 @@ importers:
     devDependencies:
       '@bitdev/general.envs.bit-env':
         specifier: ^1.0.1
-        version: 1.0.1(@testing-library/react@14.3.1)(@types/node@20.12.7)(@types/react@18.2.23)(graphql@16.8.1)(jsdom@23.2.0)(sass@1.75.0)
+        version: 1.0.1(@testing-library/react@14.3.1)(@types/node@20.12.7)(@types/react@18.2.23)(graphql@16.8.1)(jest@29.3.1)(jsdom@23.2.0)(sass@1.75.0)
       '@types/node':
         specifier: ^20.11.22
         version: 20.12.7
+
+  tailwind-library/theme:
+    dependencies:
+      '@mdx-js/react':
+        specifier: 1.6.22
+        version: 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context':
+        specifier: 1.0.0
+        version: 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@types/react':
+        specifier: 18.2.23
+        version: 18.2.23
+      '@types/react-dom':
+        specifier: ^18.2.5
+        version: 18.2.25
+      jest:
+        specifier: 29.3.1
+        version: 29.3.1(@types/node@18.19.31)
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@teambit/node.node':
+        specifier: 1.0.54
+        version: 1.0.54(@testing-library/react@14.3.1)(@types/node@18.19.31)(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(graphql@16.8.1)
+      '@types/jest':
+        specifier: ^29.2.2
+        version: 29.5.12
+      '@types/node':
+        specifier: ^18.11.9
+        version: 18.19.31
 
   tailwind-library/ui/button:
     dependencies:
@@ -877,7 +1001,7 @@ importers:
         version: 1.0.7(@types/react@18.2.23)(react@18.2.0)
       '@testing-library/jest-dom':
         specifier: 6.4.2
-        version: 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
         specifier: ^14.2.1
         version: 14.3.1(react-dom@18.2.0)(react@18.2.0)
@@ -910,7 +1034,7 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
       eslint-plugin-jest:
         specifier: 27.6.3
-        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y:
         specifier: 6.8.0
         version: 6.8.0(eslint@8.56.0)
@@ -967,7 +1091,7 @@ importers:
         version: 1.0.7(@types/react@18.2.23)(react@18.2.0)
       '@testing-library/jest-dom':
         specifier: 6.4.2
-        version: 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
         specifier: ^14.2.1
         version: 14.3.1(react-dom@18.2.0)(react@18.2.0)
@@ -1000,7 +1124,7 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
       eslint-plugin-jest:
         specifier: 27.6.3
-        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y:
         specifier: 6.8.0
         version: 6.8.0(eslint@8.56.0)
@@ -1057,7 +1181,7 @@ importers:
         version: 1.0.7(@types/react@18.2.23)(react@18.2.0)
       '@testing-library/jest-dom':
         specifier: 6.4.2
-        version: 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react':
         specifier: ^14.2.1
         version: 14.3.1(react-dom@18.2.0)(react@18.2.0)
@@ -1090,7 +1214,7 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
       eslint-plugin-jest:
         specifier: 27.6.3
-        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y:
         specifier: 6.8.0
         version: 6.8.0(eslint@8.56.0)
@@ -3796,6 +3920,13 @@ packages:
   /@babel/regjsgen@0.8.0:
     resolution: {integrity: sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==}
 
+  /@babel/runtime-corejs3@7.24.4:
+    resolution: {integrity: sha512-VOQOexSilscN24VEY810G/PqtpFvx/z6UqDIjIWbDe2368HhDLkYN5TYwaEz/+eRCUkhJ2WaNLLmQAlxzfWj4w==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      core-js-pure: 3.37.0
+      regenerator-runtime: 0.14.1
+
   /@babel/runtime@7.20.0:
     resolution: {integrity: sha512-NDYdls71fTXoU8TZHfbBWg7DiZfNzClcKui/+kyi6ppD2L1qnWW3VV6CjtaBXSUGGhiTWJ6ereOIkUvenif66Q==}
     engines: {node: '>=6.9.0'}
@@ -3931,7 +4062,7 @@ packages:
       - webpack-hot-middleware
       - webpack-plugin-serve
 
-  /@bitdev/general.envs.bit-env@1.0.1(@testing-library/react@14.3.1)(@types/node@20.12.7)(@types/react@18.2.23)(graphql@16.8.1)(jsdom@23.2.0)(sass@1.75.0):
+  /@bitdev/general.envs.bit-env@1.0.1(@testing-library/react@14.3.1)(@types/node@20.12.7)(@types/react@18.2.23)(graphql@16.8.1)(jest@29.3.1)(jsdom@23.2.0)(sass@1.75.0):
     resolution: {integrity: sha512-ox2wL8vpfvAxeBtIjdDg8REM2nxJq2E8yncQv26816sdT5VG4k40DPB0aIePHqSucDVnULlYICxAo8GEZA1QbA==}
     dependencies:
       '@babel/runtime': 7.20.0
@@ -3944,7 +4075,7 @@ packages:
       core-js: 3.37.0
       eslint: 8.56.0
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
-      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
       eslint-plugin-mdx: 3.1.5(eslint@8.56.0)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
@@ -4016,7 +4147,7 @@ packages:
     dependencies:
       lodash: 4.17.21
 
-  /@bitdev/node.node-env@1.0.26(@testing-library/react@14.3.1)(@types/react@18.2.23)(jsdom@23.2.0)(sass@1.75.0):
+  /@bitdev/node.node-env@1.0.26(@testing-library/react@14.3.1)(@types/react@18.2.23)(jest@29.3.1)(jsdom@23.2.0)(sass@1.75.0):
     resolution: {integrity: sha512-fMdpzR9F807DpcY6hKjw2gELrfYMXwGScANvnYBxvY1QCGtRIAHQfR41vymLR24nF0tTHq7rOxquApqrpPtwBg==}
     dependencies:
       '@babel/plugin-proposal-decorators': 7.20.2(@babel/core@7.20.2)
@@ -4028,7 +4159,7 @@ packages:
       '@bitdev/node.generators.node-starters': 0.0.9
       '@bitdev/node.generators.node-templates': 1.0.15
       '@bitdev/react.eslint.eslint-config-bit-react': 0.0.5(eslint-plugin-import@2.29.1)(eslint@8.56.0)(typescript@5.4.5)
-      '@bitdev/react.react-env': 1.1.49(@types/node@20.12.7)
+      '@bitdev/react.react-env': 1.1.49(@types/node@20.12.7)(jest@29.3.1)
       '@mdx-js/react': 1.6.22(react@18.2.0)
       '@teambit/defender.eslint-linter': 1.0.18(eslint@8.56.0)
       '@teambit/defender.prettier-formatter': 1.0.8
@@ -4047,7 +4178,7 @@ packages:
       core-js: 3.37.0
       eslint: 8.56.0
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
-      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
       eslint-plugin-mdx: 3.1.5(eslint@8.56.0)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
@@ -4184,7 +4315,7 @@ packages:
     resolution: {integrity: sha512-652Pqh/VlXerQ4YM3EQueYx+GK76u3hdJSqx0UD2RtMircR71Ko1YPOI+yC7DEECUvrrH1+Zpwyp66OUAp7RIA==}
     dev: false
 
-  /@bitdev/react.react-env@1.1.49(@types/node@20.12.7):
+  /@bitdev/react.react-env@1.1.49(@types/node@20.12.7)(jest@29.3.1):
     resolution: {integrity: sha512-okw4zRBdMSS4sqzPENlqTHthdhIDYDhdFw3/R3DbTbVeAF/qIZ4c8U4N2hjigf0xvzyfmlawSRMUqU7fu1Eaew==}
     dependencies:
       '@apollo/client': 3.9.11(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
@@ -4206,7 +4337,7 @@ packages:
       '@teambit/toolbox.performance.v8-cache': 0.0.27
       '@teambit/typescript.typescript-compiler': 2.0.16
       '@teambit/vite.vitest-tester': 0.0.39(@types/node@20.12.7)(sass@1.75.0)
-      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react': 14.3.1(react-dom@18.2.0)(react@18.2.0)
       '@types/jest': 29.5.12
       '@types/react': 18.2.23
@@ -4284,7 +4415,7 @@ packages:
       - webpack-hot-middleware
       - webpack-plugin-serve
 
-  /@bitdev/react.react-env@2.0.2(@types/node@20.12.7):
+  /@bitdev/react.react-env@2.0.2(@types/node@20.12.7)(jest@29.3.1):
     resolution: {integrity: sha512-6SilP09TM5yd+ds8Fwms8V6rgwRk9PPny4lTiYgM6wckmtvN/WONxqYw8LWVvrQ5c83l4FXU1c+dYivR2p+Iug==}
     dependencies:
       '@apollo/client': 3.9.11(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
@@ -4305,7 +4436,7 @@ packages:
       '@teambit/toolbox.performance.v8-cache': 0.0.33
       '@teambit/typescript.typescript-compiler': 2.0.28
       '@teambit/vite.vitest-tester': 0.1.1(@types/node@20.12.7)(sass@1.75.0)
-      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react': 14.3.1(react-dom@18.2.0)(react@18.2.0)
       '@types/jest': 29.5.12
       '@types/react': 18.2.23
@@ -4746,15 +4877,6 @@ packages:
   /@eslint/js@8.56.0:
     resolution: {integrity: sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-
-  /@frontend/tailwind.config.tailwind@1.0.0(react@18.2.0):
-    resolution: {integrity: sha512-6u5YudqxhOsemN9TfNcu7r4CofXMfXIZ4WUnKgz+Z/bIN3FnpYlpikRm9U+klNy3Upntz4NFTBwFobxvRNjEfg==}
-    peerDependencies:
-      react: ^17.0.0 || ^18.0.0
-    dependencies:
-      glob: 10.3.12
-      react: 18.2.0
-    dev: false
 
   /@frontend/tailwind.plugin@1.0.1(tailwindcss@3.4.3):
     resolution: {integrity: sha512-bK5Q1UFmmBdMtO3y9gstDpIC9g8vV/6iX7QYgpdaNyTnNfVRtG0gzGzenkJj0jNJQm/PJ5VkZMnblminr901Cg==}
@@ -6306,6 +6428,40 @@ packages:
       p-map-series: 2.1.0
       typescript: 5.4.5
 
+  /@teambit/defender.jest-tester@1.0.25(@types/node@18.19.31):
+    resolution: {integrity: sha512-aWrJhLVDTvexpfGJJNYxgNw6qEMtc+jQVsMi/DoiGqDRvJgHZlory0nCbUf9EsLK++L2Zb3NpvLyDJRKwW2aug==}
+    dependencies:
+      '@babel/core': 7.20.2
+      '@babel/plugin-proposal-decorators': 7.24.1(@babel/core@7.20.2)
+      '@babel/plugin-transform-class-properties': 7.22.5(@babel/core@7.20.2)
+      '@babel/plugin-transform-modules-commonjs': 7.19.6(@babel/core@7.20.2)
+      '@babel/plugin-transform-object-rest-spread': 7.22.15(@babel/core@7.20.2)
+      '@babel/preset-env': 7.22.15(@babel/core@7.20.2)
+      '@babel/preset-typescript': 7.22.15(@babel/core@7.20.2)
+      '@jest/test-result': 29.3.1
+      '@teambit/defender.tester-task': 1.0.8
+      '@teambit/tests-results': 1.0.4
+      babel-plugin-transform-typescript-metadata: 0.3.2(@babel/core@7.20.2)
+      babel-preset-jest: 29.2.0(@babel/core@7.20.2)
+      camelcase: 7.0.0
+      comlink: 4.3.1
+      flatted: 3.2.7
+      fs-extra: 10.1.0
+      identity-obj-proxy: 3.0.0
+      jest: 29.3.1(@types/node@18.19.31)
+      jest-message-util: 29.3.1
+      lodash: 4.17.21
+      minimatch: 5.1.0
+      normalize-path: 3.0.0
+    transitivePeerDependencies:
+      - '@babel/traverse'
+      - '@types/node'
+      - babel-plugin-macros
+      - node-notifier
+      - supports-color
+      - ts-node
+    dev: true
+
   /@teambit/defender.jest-tester@1.0.25(@types/node@20.12.7):
     resolution: {integrity: sha512-aWrJhLVDTvexpfGJJNYxgNw6qEMtc+jQVsMi/DoiGqDRvJgHZlory0nCbUf9EsLK++L2Zb3NpvLyDJRKwW2aug==}
     dependencies:
@@ -6437,7 +6593,7 @@ packages:
     resolution: {integrity: sha512-PsA3S56Zw6mMKuUm+RkQ5HzxrgEC0XzBSlICjgejpjXqSA8eKFn4IJfhPCpH4KPeaCMvWIkaRoJ5FZZMDYSJqw==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
-      react: 17.0.2
+      react: '*'
     dependencies:
       react: 18.2.0
 
@@ -6524,8 +6680,8 @@ packages:
     resolution: {integrity: sha1-vQV7Te5JyvHLSgtDRcCjbwF7v6E=, tarball: https://node-registry.bit.cloud/@teambit/design.ui.error-page/-/@teambit-design.ui.error-page-0.0.364.tgz}
     engines: {node: '>=12.22.0'}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0
-      react-dom: ^16.8.0 || ^17.0.0
+      react: '*'
+      react-dom: '*'
     dependencies:
       '@teambit/base-react.navigation.link': 2.0.27(@testing-library/react@14.3.1)(@types/react@18.2.23)(react-dom@18.2.0)(react@18.2.0)
       '@teambit/community.constants.links': 0.0.2
@@ -7312,6 +7468,174 @@ packages:
   /@teambit/node.deps-detectors.parser-helper@0.0.0-1ca3300f0fe89cba790beb930903095053a2a24a:
     resolution: {integrity: sha512-vJrbAt/ci/vPU42f7HsNzYaeub0Okp99oJtAXiA58MwxmeG8oroqP4Z4kxVmAAbbpbI8d3Z4Q6rGBvpfh459CQ==}
 
+  /@teambit/node.generator.node-starters@1.0.0:
+    resolution: {integrity: sha512-EkEt8XJVx/+JAiC9eMQR7CH3tgYKGuZ7bu9raFDUi4EpWvdEkjR7Q6enXj/Ifqu3ekXtl2XecN/Nr1VxMBcGsQ==}
+    dependencies:
+      comment-json: 4.2.3
+
+  /@teambit/node.generator.node-templates@1.0.16:
+    resolution: {integrity: sha512-szjBPFIdQPx1KOCy618QMZlxlFtzFKG6Popla/Svhgzc7fiJcaRb52c7WYtG4OlZidshYzKfoBEnxOEvxACimQ==}
+    deprecated: No longer maintained, use bitdev.node/generators/node-templates
+    dependencies:
+      lodash: 4.17.21
+
+  /@teambit/node.node@1.0.54(@testing-library/react@14.3.1)(@types/node@18.19.31)(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(graphql@16.8.1):
+    resolution: {integrity: sha512-3joYKUPD+2kmlRHnLgeaxwd7bMG6FUT27XOXWkjjnbQ/lWBnKj4TO56rtXx7YrWNdHnmGrXewe47bGuG5YEzIA==}
+    dependencies:
+      '@babel/plugin-proposal-decorators': 7.20.2(@babel/core@7.20.2)
+      '@babel/plugin-transform-class-properties': 7.22.5(@babel/core@7.20.2)
+      '@babel/plugin-transform-object-rest-spread': 7.22.15(@babel/core@7.20.2)
+      '@babel/preset-env': 7.22.15(@babel/core@7.20.2)
+      '@babel/preset-typescript': 7.22.15(@babel/core@7.20.2)
+      '@babel/runtime': 7.20.0
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@teambit/defender.eslint-linter': 1.0.22(eslint@8.56.0)
+      '@teambit/defender.jest-tester': 1.0.25(@types/node@18.19.31)
+      '@teambit/defender.prettier-formatter': 1.0.11
+      '@teambit/dependencies.modules.packages-excluder': 1.0.8(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@teambit/node.generator.node-starters': 1.0.0
+      '@teambit/node.generator.node-templates': 1.0.16
+      '@teambit/preview.react-preview': 1.0.25(@testing-library/react@14.3.1)(@types/react@18.2.23)(eslint@8.56.0)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+      '@teambit/react.mounter': 1.0.3
+      '@teambit/react.react-env': 1.0.54(@testing-library/react@14.3.1)(@types/node@18.19.31)
+      '@teambit/typescript.typescript-compiler': 2.0.24
+      '@types/react': 18.2.23
+      '@types/react-dom': 18.2.25
+      babel-plugin-transform-typescript-metadata: 0.3.2(@babel/core@7.20.2)
+      core-js: 3.37.0
+      eslint-plugin-import: 2.22.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 24.1.5(eslint@8.56.0)
+      eslint-plugin-jsx-a11y: 6.4.1(eslint@8.56.0)
+      eslint-plugin-mdx: 1.13.0(eslint@8.56.0)
+      eslint-plugin-react: 7.22.0(eslint@8.56.0)
+      eslint-plugin-react-hooks: 4.2.0(eslint@8.56.0)
+      jest: 29.3.1(@types/node@18.19.31)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@babel/traverse'
+      - '@parcel/css'
+      - '@swc/core'
+      - '@swc/css'
+      - '@testing-library/react'
+      - '@types/express'
+      - '@types/node'
+      - '@types/webpack'
+      - '@typescript-eslint/parser'
+      - babel-plugin-macros
+      - bufferutil
+      - canvas
+      - clean-css
+      - csso
+      - debug
+      - encoding
+      - esbuild
+      - eslint
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - fibers
+      - graphql
+      - html-webpack-plugin
+      - less
+      - lightningcss
+      - node-notifier
+      - node-sass
+      - puppeteer
+      - sass-embedded
+      - sockjs-client
+      - supports-color
+      - ts-node
+      - type-fest
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+      - webpack-dev-server
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+    dev: true
+
+  /@teambit/node.node@1.0.54(@testing-library/react@14.3.1)(@types/node@20.12.7)(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(graphql@16.8.1):
+    resolution: {integrity: sha512-3joYKUPD+2kmlRHnLgeaxwd7bMG6FUT27XOXWkjjnbQ/lWBnKj4TO56rtXx7YrWNdHnmGrXewe47bGuG5YEzIA==}
+    dependencies:
+      '@babel/plugin-proposal-decorators': 7.20.2(@babel/core@7.20.2)
+      '@babel/plugin-transform-class-properties': 7.22.5(@babel/core@7.20.2)
+      '@babel/plugin-transform-object-rest-spread': 7.22.15(@babel/core@7.20.2)
+      '@babel/preset-env': 7.22.15(@babel/core@7.20.2)
+      '@babel/preset-typescript': 7.22.15(@babel/core@7.20.2)
+      '@babel/runtime': 7.20.0
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@teambit/defender.eslint-linter': 1.0.22(eslint@8.56.0)
+      '@teambit/defender.jest-tester': 1.0.25(@types/node@20.12.7)
+      '@teambit/defender.prettier-formatter': 1.0.11
+      '@teambit/dependencies.modules.packages-excluder': 1.0.8(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@teambit/node.generator.node-starters': 1.0.0
+      '@teambit/node.generator.node-templates': 1.0.16
+      '@teambit/preview.react-preview': 1.0.25(@testing-library/react@14.3.1)(@types/react@18.2.23)(eslint@8.56.0)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+      '@teambit/react.mounter': 1.0.3
+      '@teambit/react.react-env': 1.0.54(@testing-library/react@14.3.1)(@types/node@20.12.7)
+      '@teambit/typescript.typescript-compiler': 2.0.24
+      '@types/react': 18.2.23
+      '@types/react-dom': 18.2.25
+      babel-plugin-transform-typescript-metadata: 0.3.2(@babel/core@7.20.2)
+      core-js: 3.37.0
+      eslint-plugin-import: 2.22.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 24.1.5(eslint@8.56.0)
+      eslint-plugin-jsx-a11y: 6.4.1(eslint@8.56.0)
+      eslint-plugin-mdx: 1.13.0(eslint@8.56.0)
+      eslint-plugin-react: 7.22.0(eslint@8.56.0)
+      eslint-plugin-react-hooks: 4.2.0(eslint@8.56.0)
+      jest: 29.3.1(@types/node@20.12.7)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@babel/traverse'
+      - '@parcel/css'
+      - '@swc/core'
+      - '@swc/css'
+      - '@testing-library/react'
+      - '@types/express'
+      - '@types/node'
+      - '@types/webpack'
+      - '@typescript-eslint/parser'
+      - babel-plugin-macros
+      - bufferutil
+      - canvas
+      - clean-css
+      - csso
+      - debug
+      - encoding
+      - esbuild
+      - eslint
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - fibers
+      - graphql
+      - html-webpack-plugin
+      - less
+      - lightningcss
+      - node-notifier
+      - node-sass
+      - puppeteer
+      - sass-embedded
+      - sockjs-client
+      - supports-color
+      - ts-node
+      - type-fest
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+      - webpack-dev-server
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+
   /@teambit/preview.react-preview@1.0.23(@testing-library/react@14.3.1)(@types/react@18.2.23)(eslint@8.56.0)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ocnC2ZHhzZT3+mFeZm5zH+kwVklZI0npmAgM3brqPM51NcOWGLT2hGUhpH1hclV2d+0qoariWDwKWR9oPemIcA==}
     peerDependencies:
@@ -7499,7 +7823,6 @@ packages:
       - webpack-cli
       - webpack-hot-middleware
       - webpack-plugin-serve
-    dev: false
 
   /@teambit/preview.react-preview@1.0.25(@testing-library/react@14.3.1)(@types/react@18.2.23)(eslint@8.56.0)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.5):
     resolution: {integrity: sha512-1/XT4CaX4fpzbIAUa9MFWyNKzkVodW7aUVQdlebPLHgaUoSrAhAIILSgj9167oVgLBNnaY00kRBJbfGmAT7HNQ==}
@@ -7652,6 +7975,27 @@ packages:
     dependencies:
       dedent: 0.7.0
 
+  /@teambit/react.jest.react-jest@1.0.20(@types/node@18.19.31):
+    resolution: {integrity: sha512-Whibx4HNWJNZ7iUzZGLCZaqaE8SpjBWTk0hzBUu4OkVijs4Ve8uKhawMDCWO8kgzZjQwhSZWDpYKXMVDfU9cZg==}
+    dependencies:
+      '@babel/preset-react': 7.22.15
+      '@teambit/defender.jest-tester': 1.0.25(@types/node@18.19.31)
+      '@testing-library/jest-dom': 5.16.5
+      jest-environment-jsdom: 29.3.1
+      react-app-polyfill: 3.0.0
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@babel/traverse'
+      - '@types/node'
+      - babel-plugin-macros
+      - bufferutil
+      - canvas
+      - node-notifier
+      - supports-color
+      - ts-node
+      - utf-8-validate
+    dev: true
+
   /@teambit/react.jest.react-jest@1.0.20(@types/node@20.12.7):
     resolution: {integrity: sha512-Whibx4HNWJNZ7iUzZGLCZaqaE8SpjBWTk0hzBUu4OkVijs4Ve8uKhawMDCWO8kgzZjQwhSZWDpYKXMVDfU9cZg==}
     dependencies:
@@ -7705,6 +8049,86 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-error-boundary: 3.1.4(react@18.2.0)
+
+  /@teambit/react.react-env@1.0.54(@testing-library/react@14.3.1)(@types/node@18.19.31):
+    resolution: {integrity: sha512-w5qm7qcLanbRSeTg4xYh4ERqji/gjemfnDhhFKx8dSY0q+G/GE9nmaT4OzxRR6dWIyIGVAuEbcLS3kMqInyGVw==}
+    dependencies:
+      '@babel/runtime': 7.20.0
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@teambit/defender.eslint-linter': 1.0.22(eslint@8.56.0)
+      '@teambit/defender.jest-tester': 1.0.25(@types/node@18.19.31)
+      '@teambit/defender.prettier-formatter': 1.0.11
+      '@teambit/dependencies.modules.packages-excluder': 1.0.8(react@18.2.0)
+      '@teambit/docs.docs-template': 1.0.4(@testing-library/react@14.3.1)(@types/react@18.2.23)(graphql@15.8.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.5)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@teambit/preview.react-preview': 1.0.25(@testing-library/react@14.3.1)(@types/react@18.2.23)(eslint@8.56.0)(graphql@15.8.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.5)
+      '@teambit/react.apps.react-app-types': 1.0.21(@testing-library/react@14.3.1)(@types/react@18.2.23)(eslint@8.56.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.5)
+      '@teambit/react.eslint-config-bit-react': 1.0.141(eslint-plugin-import@2.29.1)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.33.2)(eslint@8.56.0)(typescript@5.4.5)
+      '@teambit/react.generator.react-starters': 1.0.8
+      '@teambit/react.generator.react-templates': 1.0.11
+      '@teambit/react.jest.react-jest': 1.0.20(@types/node@18.19.31)
+      '@teambit/react.mounter': 1.0.3
+      '@teambit/typescript.typescript-compiler': 2.0.24
+      '@testing-library/jest-dom': 5.16.5
+      '@types/react': 18.2.23
+      '@types/react-dom': 18.2.25
+      '@typescript-eslint/eslint-plugin': 6.19.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(typescript@5.4.5)
+      '@typescript-eslint/parser': 6.19.1(eslint@8.56.0)(typescript@5.4.5)
+      browserslist: 4.21.4
+      core-js: 3.37.0
+      eslint: 8.56.0
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
+      eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
+      eslint-plugin-mdx: 3.1.5(eslint@8.56.0)
+      eslint-plugin-react: 7.33.2(eslint@8.56.0)
+      eslint-plugin-react-hooks: 4.6.0(eslint@8.56.0)
+      graphql: 15.8.0
+      jest: 29.3.1(@types/node@18.19.31)
+      pino-pretty: 4.5.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      typescript: 5.4.5
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@babel/traverse'
+      - '@parcel/css'
+      - '@swc/core'
+      - '@swc/css'
+      - '@testing-library/react'
+      - '@types/express'
+      - '@types/node'
+      - '@types/webpack'
+      - babel-plugin-macros
+      - bufferutil
+      - canvas
+      - clean-css
+      - csso
+      - debug
+      - encoding
+      - esbuild
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - fibers
+      - html-webpack-plugin
+      - less
+      - lightningcss
+      - node-notifier
+      - node-sass
+      - puppeteer
+      - sass-embedded
+      - sockjs-client
+      - supports-color
+      - ts-node
+      - type-fest
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+      - webpack-dev-server
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+    dev: true
 
   /@teambit/react.react-env@1.0.54(@testing-library/react@14.3.1)(@types/node@20.12.7):
     resolution: {integrity: sha512-w5qm7qcLanbRSeTg4xYh4ERqji/gjemfnDhhFKx8dSY0q+G/GE9nmaT4OzxRR6dWIyIGVAuEbcLS3kMqInyGVw==}
@@ -8309,7 +8733,6 @@ packages:
       - webpack-dev-server
       - webpack-hot-middleware
       - webpack-plugin-serve
-    dev: false
 
   /@teambit/tests-results@1.0.0:
     resolution: {integrity: sha512-vAC+wZjTQyySMg5L5aMrzY3ks3+K7dctuyD+3sH4kcmDVeCXxqlf9OXuBcNpOev8o+67Rqx2OAH3QKR+AaQ4ig==}
@@ -8812,7 +9235,7 @@ packages:
       lodash: 4.17.21
       redent: 3.0.0
 
-  /@testing-library/jest-dom@6.4.2(@types/jest@29.5.12)(vitest@1.2.1):
+  /@testing-library/jest-dom@6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1):
     resolution: {integrity: sha512-CzqH0AFymEMG48CpzXFriYYkOjk6ZGPCLMhW9e9jg3KMCn5OfJecF8GtGW7yGfR/IgCe3SX8BSwjdzI6BBbZLw==}
     engines: {node: '>=14', npm: '>=6', yarn: '>=1'}
     peerDependencies:
@@ -8840,6 +9263,7 @@ packages:
       chalk: 3.0.0
       css.escape: 1.5.1
       dom-accessibility-api: 0.6.3
+      jest: 29.3.1(@types/node@20.12.7)
       lodash: 4.17.21
       redent: 3.0.0
       vitest: 1.2.1(@types/node@20.12.7)(jsdom@23.2.0)(sass@1.75.0)
@@ -9058,6 +9482,11 @@ packages:
     dependencies:
       '@types/node': 20.12.7
 
+  /@types/node@18.19.31:
+    resolution: {integrity: sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==}
+    dependencies:
+      undici-types: 5.26.5
+
   /@types/node@20.12.7:
     resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
     dependencies:
@@ -9211,6 +9640,23 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /@typescript-eslint/experimental-utils@4.33.0(eslint@8.56.0):
+    resolution: {integrity: sha512-zeQjOoES5JFjTnAhI5QY7ZviczMzDptls15GFsI6jyUOq0kOf9+WonkhtlIhh0RgHRnqj5gdNxW5j1EvAyYg6Q==}
+    engines: {node: ^10.12.0 || >=12.0.0}
+    peerDependencies:
+      eslint: '*'
+    dependencies:
+      '@types/json-schema': 7.0.15
+      '@typescript-eslint/scope-manager': 4.33.0
+      '@typescript-eslint/types': 4.33.0
+      '@typescript-eslint/typescript-estree': 4.33.0
+      eslint: 8.56.0
+      eslint-scope: 5.1.1
+      eslint-utils: 3.0.0(eslint@8.56.0)
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+
   /@typescript-eslint/parser@4.4.1(eslint@8.56.0)(typescript@5.4.5):
     resolution: {integrity: sha512-S0fuX5lDku28Au9REYUsV+hdJpW/rNW0gWlc4SXzF/kdrRaAVX9YCxKpziH7djeWT/HFAjLZcnY7NJD8xTeUEg==}
     engines: {node: ^10.12.0 || >=12.0.0}
@@ -9269,6 +9715,13 @@ packages:
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
+
+  /@typescript-eslint/scope-manager@4.33.0:
+    resolution: {integrity: sha512-5IfJHpgTsTZuONKbODctL4kKuQje/bzBRkwHE8UOZ4f89Zeddg+EGZs8PD8NcN4LdM3ygHWYB3ukPAYjvl/qbQ==}
+    engines: {node: ^8.10.0 || ^10.13.0 || >=11.10.1}
+    dependencies:
+      '@typescript-eslint/types': 4.33.0
+      '@typescript-eslint/visitor-keys': 4.33.0
 
   /@typescript-eslint/scope-manager@4.4.1:
     resolution: {integrity: sha512-2oD/ZqD4Gj41UdFeWZxegH3cVEEH/Z6Bhr/XvwTtGv66737XkR4C9IqEkebCuqArqBJQSj4AgNHHiN1okzD/wQ==}
@@ -9336,6 +9789,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /@typescript-eslint/types@4.33.0:
+    resolution: {integrity: sha512-zKp7CjQzLQImXEpLt2BUw1tvOMPfNoTAfb8l51evhYbOEEzdWyQNmHWWGPR6hwKJDAi+1VXSBmnhL9kyVTTOuQ==}
+    engines: {node: ^8.10.0 || ^10.13.0 || >=11.10.1}
+
   /@typescript-eslint/types@4.4.1:
     resolution: {integrity: sha512-KNDfH2bCyax5db+KKIZT4rfA8rEk5N0EJ8P0T5AJjo5xrV26UAzaiqoJCxeaibqc0c/IvZxp7v2g3difn2Pn3w==}
     engines: {node: ^8.10.0 || ^10.13.0 || >=11.10.1}
@@ -9351,6 +9808,25 @@ packages:
   /@typescript-eslint/types@7.1.0:
     resolution: {integrity: sha512-qTWjWieJ1tRJkxgZYXx6WUYtWlBc48YRxgY2JN1aGeVpkhmnopq+SUC8UEVGNXIvWH7XyuTjwALfG6bFEgCkQA==}
     engines: {node: ^16.0.0 || >=18.0.0}
+
+  /@typescript-eslint/typescript-estree@4.33.0:
+    resolution: {integrity: sha512-rkWRY1MPFzjwnEVHsxGemDzqqddw2QbTJlICPD9p9I9LfsO8fdmfQPOX3uKfUaGRDFJbfrtm/sXhVXN4E+bzCA==}
+    engines: {node: ^10.12.0 || >=12.0.0}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@typescript-eslint/types': 4.33.0
+      '@typescript-eslint/visitor-keys': 4.33.0
+      debug: 4.3.4
+      globby: 11.1.0
+      is-glob: 4.0.3
+      semver: 7.6.0
+      tsutils: 3.21.0(typescript@5.4.5)
+    transitivePeerDependencies:
+      - supports-color
 
   /@typescript-eslint/typescript-estree@4.4.1(typescript@5.4.5):
     resolution: {integrity: sha512-wP/V7ScKzgSdtcY1a0pZYBoCxrCstLrgRQ2O9MmCUZDtmgxCO/TCqOTGRVwpP4/2hVfqMz/Vw1ZYrG8cVxvN3g==}
@@ -9489,6 +9965,13 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  /@typescript-eslint/visitor-keys@4.33.0:
+    resolution: {integrity: sha512-uqi/2aSz9g2ftcHWf8uLPJA70rUv6yuMW5Bohw+bwcuzaxQIHaKFZCKGoGXIrc9vkTJ3+0txM73K0Hq3d5wgIg==}
+    engines: {node: ^8.10.0 || ^10.13.0 || >=11.10.1}
+    dependencies:
+      '@typescript-eslint/types': 4.33.0
+      eslint-visitor-keys: 2.1.0
 
   /@typescript-eslint/visitor-keys@4.4.1:
     resolution: {integrity: sha512-H2JMWhLaJNeaylSnMSQFEhT/S/FsJbebQALmoJxMPMxLtlVAMy2uJP/Z543n9IizhjRayLSqoInehCeNW9rWcw==}
@@ -9967,6 +10450,13 @@ packages:
       leven: 2.1.0
       mri: 1.1.4
 
+  /aria-query@4.2.2:
+    resolution: {integrity: sha512-o/HelwhuKpTj/frsOsbNLNgnNGVIFsVP/SW2BSF14gVl7kAfMOJ6/8wUAUvG1R1NHKrfG+2sHZTu0yauT1qBrA==}
+    engines: {node: '>=6.0'}
+    dependencies:
+      '@babel/runtime': 7.24.4
+      '@babel/runtime-corejs3': 7.24.4
+
   /aria-query@5.1.3:
     resolution: {integrity: sha512-R5iJ5lkuHybztUfuOAznmboyjWq8O6sqNqtK7CLOqdydi54VNbORp49mb14KbWgG1QD3JFO9hJdZ+y4KutfdOQ==}
     dependencies:
@@ -10077,6 +10567,9 @@ packages:
   /assertion-error@1.1.0:
     resolution: {integrity: sha512-jgsaNduz+ndvGyFt3uSuWqvy4lCnIJiovtouQN5JZHOKCS2QuhEdbcQHFhVksz2N2U9hXJo8odG7ETyWlEeuDw==}
 
+  /ast-types-flow@0.0.7:
+    resolution: {integrity: sha512-eBvWn1lvIApYMhzQMsu9ciLfkBY499mFZlNqG+/9WR7PVlroQw0vG30cOQQbaKz3sCEc44TAOu2ykzqXSNnwag==}
+
   /ast-types-flow@0.0.8:
     resolution: {integrity: sha512-OH/2E5Fg20h2aPrbe+QL8JZQFko0YZaF+j4mnQ7BGhfavO7OpSLa8a0y9sBwomHdSbkhTS8TQNayBfnW5DwbvQ==}
 
@@ -10124,6 +10617,9 @@ packages:
   /axe-core@4.7.0:
     resolution: {integrity: sha512-M0JtH+hlOL5pLQwHOLNYZaXuhqmvS8oExsqB1SBYgA4Dk7u/xx+YdGHXaK5pyUfed5mYXdlYiphWq3G8cRi5JQ==}
     engines: {node: '>=4'}
+
+  /axobject-query@2.2.0:
+    resolution: {integrity: sha512-Td525n+iPOOyUQIeBfcASuG6uJsDOITl7Mds5gFyerkWiX7qhUTdYUBlSgNMyVqtSJqwpt1kXGLdUt6SykLMRA==}
 
   /axobject-query@3.2.1:
     resolution: {integrity: sha512-jsyHu61e6N4Vbz/v18DHwWYKK0bSWLqn47eeDSKPB7m8tqMHF9YJ+mhIk2lVteyZrY8tnSj/jHOv4YiTCuCJgg==}
@@ -10977,6 +11473,10 @@ packages:
   /constants-browserify@1.0.0:
     resolution: {integrity: sha512-xFxOwqIzR/e1k1gLiWEophSCMqXcwVHIH7akf7b/vxcUeGunlj3hvZaaqxwHsTgn+IndtkQJgSztIDWeumWJDQ==}
 
+  /contains-path@0.1.0:
+    resolution: {integrity: sha512-OKZnPGeMQy2RPaUIBPFFd71iNf4791H12MCRuVQDnzGRwCYNYmTDy5pdafo2SLAcEMKzTOQnLWG4QdcjeJUMEg==}
+    engines: {node: '>=0.10.0'}
+
   /content-disposition@0.5.4:
     resolution: {integrity: sha512-FveZTNuGw04cxlAiWbzi6zTAL/lhehaWbTtgluJh4/E95DqMwTmha3KZN1aAWA8cFIhHzMZUvLevkw5Rqk+tSQ==}
     engines: {node: '>= 0.6'}
@@ -11088,6 +11588,24 @@ packages:
       ripemd160: 2.0.2
       safe-buffer: 5.2.1
       sha.js: 2.4.11
+
+  /create-jest@29.7.0(@types/node@18.19.31):
+    resolution: {integrity: sha512-Adz2bdH0Vq3F53KEMJOoftQFutWCukm6J24wbPWRO4k1kMY7gS7ds/uoJkNuV8wDCtWWnuwGcJwpWcih+zEW1Q==}
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+    hasBin: true
+    dependencies:
+      '@jest/types': 29.6.3
+      chalk: 4.1.2
+      exit: 0.1.2
+      graceful-fs: 4.2.11
+      jest-config: 29.7.0(@types/node@18.19.31)
+      jest-util: 29.7.0
+      prompts: 2.4.2
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - supports-color
+      - ts-node
 
   /create-jest@29.7.0(@types/node@20.12.7):
     resolution: {integrity: sha512-Adz2bdH0Vq3F53KEMJOoftQFutWCukm6J24wbPWRO4k1kMY7gS7ds/uoJkNuV8wDCtWWnuwGcJwpWcih+zEW1Q==}
@@ -11727,6 +12245,13 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       '@leichtgewicht/ip-codec': 2.0.5
+
+  /doctrine@1.5.0:
+    resolution: {integrity: sha512-lsGyRuYr4/PIB0txi+Fy2xOMI2dGaTguCaotzFGkVZuKR5usKfcRWIFKNM3QNrU7hh/+w2bwTW+ZeXPK5l8uVg==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      esutils: 2.0.3
+      isarray: 1.0.0
 
   /doctrine@2.1.0:
     resolution: {integrity: sha512-35mSku4ZXK0vfCuHEDAwt55dg2jNajHZ1odvF+8SSr82EsZY4QmXfuWso8oEd8zRhVObSN18aM0CjSdoBX7zIw==}
@@ -12473,6 +12998,36 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /eslint-plugin-import@2.22.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0):
+    resolution: {integrity: sha512-8K7JjINHOpH64ozkAhpT3sd+FswIZTfMZTjdx052pnWrgRCVfp8op9tbjpAk3DdUeI/Ba4C8OjdC0r90erHEOw==}
+    engines: {node: '>=4'}
+    peerDependencies:
+      '@typescript-eslint/parser': '*'
+      eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0
+    peerDependenciesMeta:
+      '@typescript-eslint/parser':
+        optional: true
+    dependencies:
+      '@typescript-eslint/parser': 6.19.1(eslint@8.56.0)(typescript@5.4.5)
+      array-includes: 3.1.8
+      array.prototype.flat: 1.3.2
+      contains-path: 0.1.0
+      debug: 2.6.9
+      doctrine: 1.5.0
+      eslint: 8.56.0
+      eslint-import-resolver-node: 0.3.9
+      eslint-module-utils: 2.8.1(@typescript-eslint/parser@6.19.1)(eslint-import-resolver-node@0.3.9)(eslint@8.56.0)
+      has: 1.0.4
+      minimatch: 3.1.2
+      object.values: 1.2.0
+      read-pkg-up: 2.0.0
+      resolve: 1.22.8
+      tsconfig-paths: 3.15.0
+    transitivePeerDependencies:
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - supports-color
+
   /eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0):
     resolution: {integrity: sha512-BbPC0cuExzhiMo4Ff1BTVwHpjjv28C5R+btTOGaCRC7UEz801up0JadwkeSk5Ued6TG34uaczuVuH6qyy5YUxw==}
     engines: {node: '>=4'}
@@ -12507,21 +13062,13 @@ packages:
       - eslint-import-resolver-webpack
       - supports-color
 
-  /eslint-plugin-jest@27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0):
-    resolution: {integrity: sha512-+YsJFVH6R+tOiO3gCJon5oqn4KWc+mDq2leudk8mrp8RFubLOo9CVyi3cib4L7XMpxExmkmBZQTPDYVBzgpgOA==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+  /eslint-plugin-jest@24.1.5(eslint@8.56.0):
+    resolution: {integrity: sha512-FIP3lwC8EzEG+rOs1y96cOJmMVpdFNreoDJv29B5vIupVssRi8zrSY3QadogT0K3h1Y8TMxJ6ZSAzYUmFCp2hg==}
+    engines: {node: '>=10'}
     peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^5.0.0 || ^6.0.0
-      eslint: ^7.0.0 || ^8.0.0
-      jest: '*'
-    peerDependenciesMeta:
-      '@typescript-eslint/eslint-plugin':
-        optional: true
-      jest:
-        optional: true
+      eslint: '>=5'
     dependencies:
-      '@typescript-eslint/eslint-plugin': 6.19.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(typescript@5.4.5)
-      '@typescript-eslint/utils': 5.62.0(eslint@8.56.0)(typescript@5.4.5)
+      '@typescript-eslint/experimental-utils': 4.33.0(eslint@8.56.0)
       eslint: 8.56.0
     transitivePeerDependencies:
       - supports-color
@@ -12547,6 +13094,25 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  /eslint-plugin-jsx-a11y@6.4.1(eslint@8.56.0):
+    resolution: {integrity: sha512-0rGPJBbwHoGNPU73/QCLP/vveMlM1b1Z9PponxO87jfr6tuH5ligXbDT6nHSSzBC8ovX2Z+BQu7Bk5D/Xgq9zg==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      eslint: ^3 || ^4 || ^5 || ^6 || ^7
+    dependencies:
+      '@babel/runtime': 7.24.4
+      aria-query: 4.2.2
+      array-includes: 3.1.8
+      ast-types-flow: 0.0.7
+      axe-core: 4.7.0
+      axobject-query: 2.2.0
+      damerau-levenshtein: 1.0.8
+      emoji-regex: 9.2.2
+      eslint: 8.56.0
+      has: 1.0.4
+      jsx-ast-utils: 3.3.5
+      language-tags: 1.0.9
 
   /eslint-plugin-jsx-a11y@6.8.0(eslint@8.56.0):
     resolution: {integrity: sha512-Hdh937BS3KdwwbBaKd5+PLCOmYY6U4f2h9Z2ktwtNKvIdIEu137rjYbcb9ApSbVJfWxANNuiKTD/9tOKjK9qOA==}
@@ -12594,6 +13160,26 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /eslint-plugin-mdx@1.13.0(eslint@8.56.0):
+    resolution: {integrity: sha512-oZ/R9OmSx1gZs52CO58HTHlJXRKoZtF6ZMaWP+sOcSGMFxoddoPr9PDgpP52ab5TWu5yVl5guR9D+GMfzkR2Uw==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      eslint: '>=5.0.0'
+    dependencies:
+      cosmiconfig: 7.1.0
+      eslint: 8.56.0
+      eslint-mdx: 1.17.1(eslint@8.56.0)
+      eslint-plugin-markdown: 2.2.1(eslint@8.56.0)
+      remark-mdx: 1.6.22
+      remark-parse: 8.0.3
+      remark-stringify: 8.1.1
+      synckit: 0.1.6
+      tslib: 2.6.2
+      unified: 9.2.2
+      vfile: 4.2.1
+    transitivePeerDependencies:
+      - supports-color
+
   /eslint-plugin-mdx@1.17.1(eslint@8.56.0):
     resolution: {integrity: sha512-yOI2FmHCh+cgkMEkznxvWxfLC8AqZgco7509DjwMoCzXaxslv7YmGBKkvZyHxcbLmswnaMRBlYcd2BT7KPEnKw==}
     engines: {node: '>=10.0.0'}
@@ -12627,6 +13213,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /eslint-plugin-react-hooks@4.2.0(eslint@8.56.0):
+    resolution: {integrity: sha512-623WEiZJqxR7VdxFCKLI6d6LLpwJkGPYKODnkH3D7WpOG5KM8yWueBd8TLsNAetEJNF5iJmolaAKO3F8yzyVBQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
+    dependencies:
+      eslint: 8.56.0
+
   /eslint-plugin-react-hooks@4.6.0(eslint@8.56.0):
     resolution: {integrity: sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==}
     engines: {node: '>=10'}
@@ -12634,6 +13228,25 @@ packages:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
     dependencies:
       eslint: 8.56.0
+
+  /eslint-plugin-react@7.22.0(eslint@8.56.0):
+    resolution: {integrity: sha512-p30tuX3VS+NWv9nQot9xIGAHBXR0+xJVaZriEsHoJrASGCJZDJ8JLNM0YqKqI0AKm6Uxaa1VUHoNEibxRCMQHA==}
+    engines: {node: '>=4'}
+    peerDependencies:
+      eslint: ^3 || ^4 || ^5 || ^6 || ^7
+    dependencies:
+      array-includes: 3.1.8
+      array.prototype.flatmap: 1.3.2
+      doctrine: 2.1.0
+      eslint: 8.56.0
+      has: 1.0.4
+      jsx-ast-utils: 3.3.5
+      object.entries: 1.1.8
+      object.fromentries: 2.0.8
+      object.values: 1.2.0
+      prop-types: 15.8.1
+      resolve: 1.22.8
+      string.prototype.matchall: 4.0.11
 
   /eslint-plugin-react@7.33.2(eslint@8.56.0):
     resolution: {integrity: sha512-73QQMKALArI8/7xGLNI/3LylrEYrlKZSb5C9+q3OtOewTnMQi5cT+aE9E41sLCmli3I9PGGmD1yiZydyo4FEPw==}
@@ -12672,6 +13285,15 @@ packages:
     dependencies:
       esrecurse: 4.3.0
       estraverse: 5.3.0
+
+  /eslint-utils@3.0.0(eslint@8.56.0):
+    resolution: {integrity: sha512-uuQC43IGctw68pJA1RgbQS8/NP7rch6Cwd4j3ZBtgo4/8Flj4eGE7ZYSZRN3iq5pVUv6GPdW5Z1RFleo84uLDA==}
+    engines: {node: ^10.0.0 || ^12.0.0 || >= 14.0.0}
+    peerDependencies:
+      eslint: '>=5'
+    dependencies:
+      eslint: 8.56.0
+      eslint-visitor-keys: 2.1.0
 
   /eslint-visitor-keys@2.1.0:
     resolution: {integrity: sha512-0rSmRBzXgDzIsD6mGdJgevzgezI534Cer5L/vyMX0kHzT/jiB43jRhd9YUlMGYLQy2zprNmoT8qasCGtY+QaKw==}
@@ -13104,6 +13726,12 @@ packages:
   /find-root@1.1.0:
     resolution: {integrity: sha512-NKfW6bec6GfKc0SGx1e07QZY9PE99u0Bft/0rzSD5k3sO/vwkVUpDUKVm5Gpp5Ue3YfShPFTX2070tDs5kB9Ng==}
 
+  /find-up@2.1.0:
+    resolution: {integrity: sha512-NWzkk0jSJtTt08+FBFMvXoeZnOJD+jTtsRmBYbAIzJdX6l7dLgR7CTubCM5/eDdPUBvLCeVasP1brfVR/9/EZQ==}
+    engines: {node: '>=4'}
+    dependencies:
+      locate-path: 2.0.0
+
   /find-up@3.0.0:
     resolution: {integrity: sha512-1yD6RmLI1XBfxugvORwlck6f75tYL+iR0jqwsOrOxMZyGYqUuDhJ0l4AXdO1iX/FTs9cBAMEk1gWSEx1kSbylg==}
     engines: {node: '>=6'}
@@ -13522,6 +14150,10 @@ packages:
     dependencies:
       has-symbols: 1.0.3
 
+  /has@1.0.4:
+    resolution: {integrity: sha512-qdSAmqLF6209RFj4VVItywPMbm3vWylknmB3nvNiUIs72xAimcM8nVYxYr7ncvZq5qzk9MKIZR8ijqD/1QuYjQ==}
+    engines: {node: '>= 0.4.0'}
+
   /hash-base@3.0.4:
     resolution: {integrity: sha512-EeeoJKjTyt868liAlVmcv2ZsUfGHlE3Q+BICOXcZiwN3osr5Q/zFGYmTJpoIzuaSTAwndFy+GqhEwlU4L3j4Ow==}
     engines: {node: '>=4'}
@@ -13688,6 +14320,9 @@ packages:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
     dependencies:
       react-is: 16.13.1
+
+  /hosted-git-info@2.8.9:
+    resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
 
   /hpack.js@2.1.6:
     resolution: {integrity: sha512-zJxVehUdMGIKsRaNt7apO2Gqp0BdqW5yaiGHXXmbpvxgBYVZnAql+BJb4RO5ad2MgpbZKn5G6nMnegrH1FcNYQ==}
@@ -14368,6 +15003,33 @@ packages:
       - babel-plugin-macros
       - supports-color
 
+  /jest-cli@29.7.0(@types/node@18.19.31):
+    resolution: {integrity: sha512-OVVobw2IubN/GSYsxETi+gOe7Ka59EFMR/twOU3Jb2GnKKeMGJB5SGUUrEz3SFVmJASUdZUzy83sLNNQ2gZslg==}
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+    hasBin: true
+    peerDependencies:
+      node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
+    peerDependenciesMeta:
+      node-notifier:
+        optional: true
+    dependencies:
+      '@jest/core': 29.7.0
+      '@jest/test-result': 29.7.0
+      '@jest/types': 29.6.3
+      chalk: 4.1.2
+      create-jest: 29.7.0(@types/node@18.19.31)
+      exit: 0.1.2
+      import-local: 3.1.0
+      jest-config: 29.7.0(@types/node@18.19.31)
+      jest-util: 29.7.0
+      jest-validate: 29.7.0
+      yargs: 17.7.2
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - supports-color
+      - ts-node
+
   /jest-cli@29.7.0(@types/node@20.12.7):
     resolution: {integrity: sha512-OVVobw2IubN/GSYsxETi+gOe7Ka59EFMR/twOU3Jb2GnKKeMGJB5SGUUrEz3SFVmJASUdZUzy83sLNNQ2gZslg==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -14394,6 +15056,45 @@ packages:
       - babel-plugin-macros
       - supports-color
       - ts-node
+
+  /jest-config@29.7.0(@types/node@18.19.31):
+    resolution: {integrity: sha512-uXbpfeQ7R6TZBqI3/TxCU4q4ttk3u0PJeC+E0zbfSoSjq6bJ7buBPxzQPL0ifrkY4DNu4JUdk0ImlBUYi840eQ==}
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+    peerDependencies:
+      '@types/node': '*'
+      ts-node: '>=9.0.0'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      ts-node:
+        optional: true
+    dependencies:
+      '@babel/core': 7.24.4
+      '@jest/test-sequencer': 29.7.0
+      '@jest/types': 29.6.3
+      '@types/node': 18.19.31
+      babel-jest: 29.7.0(@babel/core@7.24.4)
+      chalk: 4.1.2
+      ci-info: 3.9.0
+      deepmerge: 4.3.1
+      glob: 7.2.3
+      graceful-fs: 4.2.11
+      jest-circus: 29.7.0
+      jest-environment-node: 29.7.0
+      jest-get-type: 29.6.3
+      jest-regex-util: 29.6.3
+      jest-resolve: 29.7.0
+      jest-runner: 29.7.0
+      jest-util: 29.7.0
+      jest-validate: 29.7.0
+      micromatch: 4.0.5
+      parse-json: 5.2.0
+      pretty-format: 29.7.0
+      slash: 3.0.0
+      strip-json-comments: 3.1.1
+    transitivePeerDependencies:
+      - babel-plugin-macros
+      - supports-color
 
   /jest-config@29.7.0(@types/node@20.12.7):
     resolution: {integrity: sha512-uXbpfeQ7R6TZBqI3/TxCU4q4ttk3u0PJeC+E0zbfSoSjq6bJ7buBPxzQPL0ifrkY4DNu4JUdk0ImlBUYi840eQ==}
@@ -14739,6 +15440,26 @@ packages:
       jest-util: 29.7.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
+
+  /jest@29.3.1(@types/node@18.19.31):
+    resolution: {integrity: sha512-6iWfL5DTT0Np6UYs/y5Niu7WIfNv/wRTtN5RSXt2DIEft3dx3zPuw/3WJQBCJfmEzvDiEKwoqMbGD9n49+qLSA==}
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+    hasBin: true
+    peerDependencies:
+      node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
+    peerDependenciesMeta:
+      node-notifier:
+        optional: true
+    dependencies:
+      '@jest/core': 29.7.0
+      '@jest/types': 29.6.3
+      import-local: 3.1.0
+      jest-cli: 29.7.0(@types/node@18.19.31)
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - supports-color
+      - ts-node
 
   /jest@29.3.1(@types/node@20.12.7):
     resolution: {integrity: sha512-6iWfL5DTT0Np6UYs/y5Niu7WIfNv/wRTtN5RSXt2DIEft3dx3zPuw/3WJQBCJfmEzvDiEKwoqMbGD9n49+qLSA==}
@@ -15168,6 +15889,15 @@ packages:
     resolution: {integrity: sha512-wM1+Z03eypVAVUCE7QdSqpVIvelbOakn1M0bPDoA4SGWPx3sNDVUiMo3L6To6WWGClB7VyXnhQ4Sn7gxiJbE6A==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
+  /load-json-file@2.0.0:
+    resolution: {integrity: sha512-3p6ZOGNbiX4CdvEd1VcE6yi78UrGNpjHO33noGwHCnT/o2fyllJDepsm8+mFFv/DvtwFHht5HIHSyOy5a+ChVQ==}
+    engines: {node: '>=4'}
+    dependencies:
+      graceful-fs: 4.2.11
+      parse-json: 2.2.0
+      pify: 2.3.0
+      strip-bom: 3.0.0
+
   /load-plugin@6.0.3:
     resolution: {integrity: sha512-kc0X2FEUZr145odl68frm+lMJuQ23+rTXYmR6TImqPtbpmXC4vVXbWKDQ9IzndA0HfyQamWfKLhzsqGSTxE63w==}
     dependencies:
@@ -15196,6 +15926,13 @@ packages:
     dependencies:
       mlly: 1.6.1
       pkg-types: 1.1.0
+
+  /locate-path@2.0.0:
+    resolution: {integrity: sha512-NCI2kiDkyR7VeEKm27Kda/iQHyKJe1Bu0FlTbYp3CqJu+9IFe9bLyAjMxf5ZDDbEg+iMPzB5zYyUTSm8wVTKmA==}
+    engines: {node: '>=4'}
+    dependencies:
+      p-locate: 2.0.0
+      path-exists: 3.0.0
 
   /locate-path@3.0.0:
     resolution: {integrity: sha512-7AO748wWnIhNqAuaty2ZWHkQHRSNfPVIsPIfwEOWO22AmaoVrWavlOcMR5nzTLNYvp36X220/maaRsrec1G65A==}
@@ -16001,6 +16738,14 @@ packages:
     dependencies:
       abbrev: 2.0.0
 
+  /normalize-package-data@2.5.0:
+    resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==}
+    dependencies:
+      hosted-git-info: 2.8.9
+      resolve: 1.22.8
+      semver: 5.7.2
+      validate-npm-package-license: 3.0.4
+
   /normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
@@ -16169,6 +16914,12 @@ packages:
   /os-browserify@0.3.0:
     resolution: {integrity: sha512-gjcpUc3clBf9+210TRaDWbf+rZZZEshZ+DlXMRCeAjp0xhTrnQsKHypIy1J3d5hKdUzj69t708EHtU8P6bUn0A==}
 
+  /p-limit@1.3.0:
+    resolution: {integrity: sha512-vvcXsLAJ9Dr5rQOPk7toZQZJApBl2K4J6dANSsEuh6QI41JYcsS/qhTGa9ErIUUgK3WNQoJYvylxvjqmiqEA9Q==}
+    engines: {node: '>=4'}
+    dependencies:
+      p-try: 1.0.0
+
   /p-limit@2.3.0:
     resolution: {integrity: sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==}
     engines: {node: '>=6'}
@@ -16186,6 +16937,12 @@ packages:
     engines: {node: '>=18'}
     dependencies:
       yocto-queue: 1.0.0
+
+  /p-locate@2.0.0:
+    resolution: {integrity: sha512-nQja7m7gSKuewoVRen45CtVfODR3crN3goVQ0DDZ9N3yHxgpkuBhZqsaiotSQRrADUrne346peY7kT3TSACykg==}
+    engines: {node: '>=4'}
+    dependencies:
+      p-limit: 1.3.0
 
   /p-locate@3.0.0:
     resolution: {integrity: sha512-x+12w/To+4GFfgJhBEpiDcLozRJGegY+Ei7/z0tSLkMmxGZNybVMSfWj9aJn8Z5Fc7dBUNJOOVgPv2H7IwulSQ==}
@@ -16215,6 +16972,10 @@ packages:
     dependencies:
       '@types/retry': 0.12.0
       retry: 0.13.1
+
+  /p-try@1.0.0:
+    resolution: {integrity: sha512-U1etNYuMJoIz3ZXSrrySFjsXQTWOx2/jdi86L+2pRvph/qMKL6sbcCYdH23fqsbm8TH2Gn0OybpT4eSFlCVHww==}
+    engines: {node: '>=4'}
 
   /p-try@2.2.0:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
@@ -16267,6 +17028,12 @@ packages:
       is-alphanumerical: 2.0.1
       is-decimal: 2.0.1
       is-hexadecimal: 2.0.1
+
+  /parse-json@2.2.0:
+    resolution: {integrity: sha512-QR/GGaKCkhwk1ePQNYDRKYZ3mwU9ypsKhB0XyFnLQdomyEqk3e8wpW3V5Jp88zbxK4n5ST1nqo+g9juTpownhQ==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      error-ex: 1.3.2
 
   /parse-json@4.0.0:
     resolution: {integrity: sha512-aOIos8bujGN93/8Ox/jPLh7RwVnPEysynVFE+fQZyg6jKELEHwzgKdLRFHUgXJL6kylijVSBC4BvN9OmsB48Rw==}
@@ -16352,6 +17119,12 @@ packages:
   /path-to-regexp@0.1.7:
     resolution: {integrity: sha512-5DFkuoqlv1uYQKxy8omFBeJPQcdoE07Kv2sferDCrAq1ohOU+MSDswDIbnx3YAM60qIOnYa53wBhXW0EbMonrQ==}
 
+  /path-type@2.0.0:
+    resolution: {integrity: sha512-dUnb5dXUf+kzhC/W/F4e5/SkluXIFf5VUHolW1Eg1irn1hGWjPGdsRcvYJ1nD6lhk8Ir7VM0bHJKsYTx8Jx9OQ==}
+    engines: {node: '>=4'}
+    dependencies:
+      pify: 2.3.0
+
   /path-type@4.0.0:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
@@ -16392,7 +17165,6 @@ packages:
   /pify@2.3.0:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
-    dev: false
 
   /pino-pretty@4.5.0:
     resolution: {integrity: sha512-TtIzAq3JrPT4cYMZcXHypAXYV+MTE7ncAPUFoaz/1enVD2Loj+hV6RZsypYo85dm7SbBolW6fcIydOF28iGjsg==}
@@ -17555,6 +18327,21 @@ packages:
       json-parse-even-better-errors: 3.0.1
       npm-normalize-package-bin: 3.0.1
 
+  /read-pkg-up@2.0.0:
+    resolution: {integrity: sha512-1orxQfbWGUiTn9XsPlChs6rLie/AV9jwZTGmu2NZw/CUDJQchXJFYE0Fq5j7+n558T1JhDWLdhyd1Zj+wLY//w==}
+    engines: {node: '>=4'}
+    dependencies:
+      find-up: 2.1.0
+      read-pkg: 2.0.0
+
+  /read-pkg@2.0.0:
+    resolution: {integrity: sha512-eFIBOPW7FGjzBuk3hdXEuNSiTZS/xEMlH49HxMyzb0hyPfu4EhVjT2DH32K1hSSmVq4sebAWnZuuY5auISUTGA==}
+    engines: {node: '>=4'}
+    dependencies:
+      load-json-file: 2.0.0
+      normalize-package-data: 2.5.0
+      path-type: 2.0.0
+
   /readable-stream@2.3.8:
     resolution: {integrity: sha512-8p0AUk4XODgIewSi0l8Epjs+EVnWiK7NoDIEGU0HhE7+ZyY8D1IMY7odu5lRrFXGg71L15KG8QrPmum45RTtdA==}
     dependencies:
@@ -18312,6 +19099,24 @@ packages:
   /space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
 
+  /spdx-correct@3.2.0:
+    resolution: {integrity: sha512-kN9dJbvnySHULIluDHy32WHRUu3Og7B9sbY7tsFLctQkIqnMh3hErYgdMjTYuqmcXX+lK5T1lnUt3G7zNswmZA==}
+    dependencies:
+      spdx-expression-parse: 3.0.1
+      spdx-license-ids: 3.0.17
+
+  /spdx-exceptions@2.5.0:
+    resolution: {integrity: sha512-PiU42r+xO4UbUS1buo3LPJkjlO7430Xn5SVAhdpzzsPHsjbYVflnnFdATgabnLude+Cqu25p6N+g2lw/PFsa4w==}
+
+  /spdx-expression-parse@3.0.1:
+    resolution: {integrity: sha512-cbqHunsQWnJNE6KhVSMsMeH5H/L9EpymbzqTQ3uLwNCLZ1Q481oWaofqH7nO6V07xlXwY6PhQdQ2IedWx/ZK4Q==}
+    dependencies:
+      spdx-exceptions: 2.5.0
+      spdx-license-ids: 3.0.17
+
+  /spdx-license-ids@3.0.17:
+    resolution: {integrity: sha512-sh8PWc/ftMqAAdFiBu6Fy6JUOYjqDJBJvIhpfDMyHrr0Rbp5liZqd4TjtQ/RgfLjKFZb+LMx5hpml5qOWy0qvg==}
+
   /spdy-transport@3.0.0:
     resolution: {integrity: sha512-hsLVFE5SjA6TCisWeJXFKniGGOpBgMLmerfO2aCyCU5s7nJ/rpAepqmFifv/GCbSbueEeAJJnmSQ2rKC/g8Fcw==}
     dependencies:
@@ -18645,6 +19450,13 @@ packages:
     dependencies:
       better-path-resolve: 1.0.0
       rename-overwrite: 5.0.0
+
+  /synckit@0.1.6:
+    resolution: {integrity: sha512-5pk9meINInVUZ4nKn5942/x/mY5OE9SVzkOFIxiCDnellaz1cwTd4m7Xl1ibz1F3AxnZ8NxQMEbF7eMWMGECGg==}
+    engines: {node: '>=4.0'}
+    dependencies:
+      tslib: 2.6.2
+      uuid: 8.3.2
 
   /synckit@0.4.1:
     resolution: {integrity: sha512-ngUh0+s+DOqEc0sGnrLaeNjbXp0CWHjSGFBqPlQmQ+oN/OfoDoYDBXPh+b4qs1M5QTk5nuQ3AmVz9+2xiY/ldw==}
@@ -19397,6 +20209,12 @@ packages:
       '@jridgewell/trace-mapping': 0.3.25
       '@types/istanbul-lib-coverage': 2.0.6
       convert-source-map: 2.0.0
+
+  /validate-npm-package-license@3.0.4:
+    resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
+    dependencies:
+      spdx-correct: 3.2.0
+      spdx-expression-parse: 3.0.1
 
   /vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
@@ -20190,7 +21008,7 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
-  file:tailwind-library/config/tailwind(@types/react@18.2.23)(jsdom@23.2.0)(react@18.2.0)(sass@1.75.0):
+  file:tailwind-library/config/tailwind(@types/react@18.2.23)(jest@29.3.1)(jsdom@23.2.0)(react@18.2.0)(sass@1.75.0):
     resolution: {directory: tailwind-library/config/tailwind, type: directory}
     id: file:tailwind-library/config/tailwind
     name: '@learnbit-react/tailwind-library.config.tailwind'
@@ -20205,7 +21023,7 @@ packages:
       '@typescript-eslint/parser': 6.19.1(eslint@8.56.0)(typescript@5.4.5)
       eslint: 8.56.0
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
-      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
       eslint-plugin-mdx: 3.1.5(eslint@8.56.0)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
@@ -20236,7 +21054,7 @@ packages:
       - typescript
     dev: false
 
-  file:tailwind-library/demo(@types/node@20.12.7)(react-dom@18.2.0)(react@18.2.0):
+  file:tailwind-library/demo(@types/node@20.12.7)(jest@29.3.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {directory: tailwind-library/demo, type: directory}
     id: file:tailwind-library/demo
     name: '@learnbit-react/tailwind-library.demo'
@@ -20247,14 +21065,14 @@ packages:
       '@apollo/client': 3.9.11(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@bitdev/react.app-types.vite-react': 2.0.0(@types/node@20.12.7)(sass@1.75.0)
       '@frontend/tailwind.plugin': 1.0.1(tailwindcss@3.4.3)
-      '@learnbit-react/tailwind-library.ui.button': file:tailwind-library/ui/button(@types/node@20.12.7)(react@18.2.0)
-      '@learnbit-react/tailwind-library.ui.switch': file:tailwind-library/ui/switch(@types/node@20.12.7)(react@18.2.0)
-      '@learnbit-react/tailwind-library.ui.textfield': file:tailwind-library/ui/textfield(@types/node@20.12.7)(react@18.2.0)
+      '@learnbit-react/tailwind-library.ui.button': file:tailwind-library/ui/button(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
+      '@learnbit-react/tailwind-library.ui.switch': file:tailwind-library/ui/switch(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
+      '@learnbit-react/tailwind-library.ui.textfield': file:tailwind-library/ui/textfield(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0)
       '@mdx-js/mdx': 1.6.22
       '@mdx-js/react': 1.6.22(react@18.2.0)
       '@mdx-js/rollup': 3.0.1
       '@teambit/mdx.ui.mdx-scope-context': 1.0.7(@types/react@18.2.23)(react@18.2.0)
-      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react': 14.3.1(react-dom@18.2.0)(react@18.2.0)
       '@types/jest': 29.5.12
       '@types/react': 18.2.23
@@ -20266,7 +21084,7 @@ packages:
       browserslist: 4.23.0
       eslint: 8.56.0
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
-      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
       eslint-plugin-mdx: 3.1.5(eslint@8.56.0)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
@@ -20313,16 +21131,15 @@ packages:
       - webpack-cli
     dev: false
 
-  file:tailwind-library/envs/tw-react-env(@types/node@20.12.7):
+  file:tailwind-library/envs/tw-react-env(@types/node@20.12.7)(jest@29.3.1):
     resolution: {directory: tailwind-library/envs/tw-react-env, type: directory}
     id: file:tailwind-library/envs/tw-react-env
     name: '@learnbit-react/tailwind-library.envs.tw-react-env'
     dependencies:
       '@apollo/client': 3.9.11(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
-      '@bitdev/react.react-env': 2.0.2(@types/node@20.12.7)
-      '@frontend/tailwind.config.tailwind': 1.0.0(react@18.2.0)
+      '@bitdev/react.react-env': 2.0.2(@types/node@20.12.7)(jest@29.3.1)
       '@frontend/tailwind.transformers.tailwind': 1.0.0(react@18.2.0)
-      '@learnbit-react/tailwind-library.config.tailwind': file:tailwind-library/config/tailwind(@types/react@18.2.23)(jsdom@23.2.0)(react@18.2.0)(sass@1.75.0)
+      '@learnbit-react/tailwind-library.config.tailwind': file:tailwind-library/config/tailwind(@types/react@18.2.23)(jest@29.3.1)(jsdom@23.2.0)(react@18.2.0)(sass@1.75.0)
       '@mdx-js/mdx': 1.6.22
       '@mdx-js/react': 1.6.22(react@18.2.0)
       '@teambit/docs.docs-template': 1.0.4(@testing-library/react@14.3.1)(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
@@ -20330,7 +21147,7 @@ packages:
       '@teambit/preview.react-preview': 1.0.25(@testing-library/react@14.3.1)(@types/react@18.2.23)(eslint@8.56.0)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@teambit/react.mounter': 1.0.3
       '@teambit/toolbox.performance.v8-cache': 0.0.33
-      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react': 14.3.1(react-dom@18.2.0)(react@18.2.0)
       '@types/jest': 29.5.12
       '@types/react': 18.2.23
@@ -20341,7 +21158,7 @@ packages:
       browserslist: 4.23.0
       eslint: 8.56.0
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
-      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
       eslint-plugin-mdx: 3.1.5(eslint@8.56.0)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
@@ -20405,7 +21222,27 @@ packages:
       - webpack-plugin-serve
     dev: false
 
-  file:tailwind-library/ui/button(@types/node@20.12.7)(react@18.2.0):
+  file:tailwind-library/theme(@types/node@20.12.7):
+    resolution: {directory: tailwind-library/theme, type: directory}
+    id: file:tailwind-library/theme
+    name: '@learnbit-react/tailwind-library.theme'
+    dependencies:
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.23
+      '@types/react-dom': 18.2.25
+      jest: 29.3.1(@types/node@20.12.7)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - node-notifier
+      - supports-color
+      - ts-node
+    dev: false
+
+  file:tailwind-library/ui/button(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0):
     resolution: {directory: tailwind-library/ui/button, type: directory}
     id: file:tailwind-library/ui/button
     name: '@learnbit-react/tailwind-library.ui.button'
@@ -20416,7 +21253,7 @@ packages:
       '@mdx-js/mdx': 1.6.22
       '@mdx-js/react': 1.6.22(react@18.2.0)
       '@teambit/mdx.ui.mdx-scope-context': 1.0.7(@types/react@18.2.23)(react@18.2.0)
-      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react': 14.3.1(react-dom@18.2.0)(react@18.2.0)
       '@types/jest': 29.5.12
       '@types/react': 18.2.23
@@ -20427,7 +21264,7 @@ packages:
       browserslist: 4.23.0
       eslint: 8.56.0
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
-      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
       eslint-plugin-mdx: 3.1.5(eslint@8.56.0)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
@@ -20470,7 +21307,7 @@ packages:
       - webpack-cli
     dev: false
 
-  file:tailwind-library/ui/switch(@types/node@20.12.7)(react@18.2.0):
+  file:tailwind-library/ui/switch(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0):
     resolution: {directory: tailwind-library/ui/switch, type: directory}
     id: file:tailwind-library/ui/switch
     name: '@learnbit-react/tailwind-library.ui.switch'
@@ -20481,7 +21318,7 @@ packages:
       '@mdx-js/mdx': 1.6.22
       '@mdx-js/react': 1.6.22(react@18.2.0)
       '@teambit/mdx.ui.mdx-scope-context': 1.0.7(@types/react@18.2.23)(react@18.2.0)
-      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react': 14.3.1(react-dom@18.2.0)(react@18.2.0)
       '@types/jest': 29.5.12
       '@types/react': 18.2.23
@@ -20492,7 +21329,7 @@ packages:
       browserslist: 4.23.0
       eslint: 8.56.0
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
-      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
       eslint-plugin-mdx: 3.1.5(eslint@8.56.0)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
@@ -20535,7 +21372,7 @@ packages:
       - webpack-cli
     dev: false
 
-  file:tailwind-library/ui/textfield(@types/node@20.12.7)(react@18.2.0):
+  file:tailwind-library/ui/textfield(@types/node@20.12.7)(jest@29.3.1)(react@18.2.0):
     resolution: {directory: tailwind-library/ui/textfield, type: directory}
     id: file:tailwind-library/ui/textfield
     name: '@learnbit-react/tailwind-library.ui.textfield'
@@ -20546,7 +21383,7 @@ packages:
       '@mdx-js/mdx': 1.6.22
       '@mdx-js/react': 1.6.22(react@18.2.0)
       '@teambit/mdx.ui.mdx-scope-context': 1.0.7(@types/react@18.2.23)(react@18.2.0)
-      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(vitest@1.2.1)
+      '@testing-library/jest-dom': 6.4.2(@types/jest@29.5.12)(jest@29.3.1)(vitest@1.2.1)
       '@testing-library/react': 14.3.1(react-dom@18.2.0)(react@18.2.0)
       '@types/jest': 29.5.12
       '@types/react': 18.2.23
@@ -20557,7 +21394,7 @@ packages:
       browserslist: 4.23.0
       eslint: 8.56.0
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
-      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(jest@29.3.1)(typescript@5.4.5)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
       eslint-plugin-mdx: 3.1.5(eslint@8.56.0)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
